@@ -22,9 +22,8 @@ body
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    border-bottom: var(--mint) 4px solid;
 }
+
 #nav-bar a
 {
     padding: 20px;
@@ -74,14 +73,21 @@ body
 /*#region Showcase*/
 #showcase
 {
-    padding: 73.5px;
+    border-top: var(--mint) 4px solid;
+    padding: 85px;
     display: flex;
     flex-direction: row;
 }
 
+#showcase .portrait
+{
+    margin-left: 75px;
+}
+
 #showcase .text-field
 {
-    margin-left: 10%;
+    margin-left: 150px;
+    min-width: 500px;
     flex-basis: 45%;
 }
 
