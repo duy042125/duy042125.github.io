@@ -22,6 +22,7 @@ body
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     border-bottom: var(--mint) 4px solid;
 }
 #nav-bar a
