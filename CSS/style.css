@@ -1,65 +1,137 @@
+:root
+{
+    --mint: #39d8bd;
+    --white: #f3f3f3;
+    --gray: #5e5e5e;
+}
+
 body
 {
-    background-color: rgb(255, 255, 255);
-    color: rgb(65, 65, 65);
+    background-color: var(--white);
+    color: var(--gray);
     font-family:  Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6em;
     margin: 0;
+    padding: 0;
 }
 
-.container
-{
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-}
-
-#main-header
-{
-    background-color: rgb(65, 65, 65);
-    color: rgb(255, 185, 79);
-}
-
+/*#region Navigation Bar*/
 #nav-bar
 {
-    background-color: rgb(255, 185, 79);
-    color: rgb(65, 65, 65);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: var(--mint) 4px solid;
 }
-
+#nav-bar a
+{
+    padding: 20px;
+    color: var(--grey);
+    font-size: 30px;
+    text-decoration: none;
+}
+#icon
+{
+    margin-left: 100px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+#icon a
+{
+    padding: 10px;
+    margin: auto;
+    font-size: 45px;
+    border: var(--mint) 4px solid;
+    color: var(--mint);
+}
+#nav-bar ul #special
+{
+    color: var(--mint);
+}
+#icon h1
+{
+    padding-left: 5px;
+}
 #nav-bar ul
 {
     padding: 0;
+    display: flex;
+    flex-direction: row;
     list-style: none;
-} 
-
-#nav-bar li
+    margin-left: auto;
+    margin-right: 75px;
+}
+#nav-bar ul a:hover, #nav-bar ul #special:hover
 {
-    display: inline;
+    background-color: var(--mint);
+    color: var(--gray);
+}
+/*#endregion*/
+
+/*#region Showcase*/
+#showcase
+{
+    padding: 73.5px;
+    display: flex;
+    flex-direction: row;
 }
 
-#nav-bar a
+#showcase .text-field
 {
-    color: rgb(65, 65, 65);
-    text-decoration: none;
+    margin-left: 10%;
+    flex-basis: 45%;
+}
+
+.text-field h2
+{
+    color: var(--mint);
+    margin-top: 10%;
+}
+
+.text-field a
+{
+    padding: 10px;
+    color: var(--grey);
     font-size: 20px;
-    padding-top: 95%;
-    padding-bottom: 95%;
-    padding: 95% 10px;
+    text-decoration: none;
+    background-color: var(--mint);
 }
 
-#nav-bar a:hover
+.aside
 {
-    background-color: rgb(255, 255, 255);
-    color: rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
+    border: var(--mint) 2px solid;
+    border-radius: 30px;
+    position: fixed;
+    right: 1%;
+    top: 40%;
 }
 
+.aside ul
+{
+    padding: 10px;
+    list-style: none;
+}
+/*#endregion*/
 
-
+/*#region Footer*/
 #main-footer
 {
-    background-color: rgb(65, 65, 65);
-    color: rgb(255, 185, 79);
-    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--gray);
+    color: var(--mint);
+    font-size: 15px;
+    font-style: italic;
     text-align: right;
+    border: var(--gray) 1px solid;
 }
+#main-footer p
+{
+    padding-right: 50px;
+}
+/*#endregion*/
