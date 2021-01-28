@@ -1,6 +1,6 @@
 :root
 {
-    --mint: #39d8bd;
+    --mint: #15d8b7;
     --white: #f3f3f3;
     --gray: #5e5e5e;
 }
@@ -22,6 +22,7 @@ body
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-bottom: var(--mint) 4px solid;
 }
 
 #nav-bar a
@@ -42,13 +43,16 @@ body
 {
     padding: 10px;
     margin: auto;
-    font-size: 45px;
-    border: var(--mint) 4px solid;
+    font-size: 55px;
+    border: var(--mint) 10px solid;
+    font-weight: bold;
     color: var(--mint);
 }
 #nav-bar ul #special
 {
     color: var(--mint);
+    font-weight: bolder;
+    font-size: 35px;
 }
 #icon h1
 {
@@ -73,7 +77,6 @@ body
 /*#region Showcase*/
 #showcase
 {
-    border-top: var(--mint) 4px solid;
     padding: 85px;
     display: flex;
     flex-direction: row;
