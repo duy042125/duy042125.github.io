@@ -1,11 +1,10 @@
-/*#region Basic Layout*/
+/*#region Layout & Variable*/
 :root
 {
     --mint: #15d8b7;
     --white: #f0f0f0;
     --gray: #5e5e5e;
 }
-
 body
 {
     background-color: var(--white);
@@ -16,6 +15,7 @@ body
     margin: 0;
     padding: 0;
 }
+/*#endregion*/
 
 /*#region Main Header*/
 #main-header
@@ -27,7 +27,6 @@ body
 }
 #main-header a
 {
-    text-decoration: none;
     text-align: center;
     color: var(--grey);
     font-size: 20px;
@@ -61,7 +60,6 @@ body
 {
     margin-left: auto;
 }
-
 #nav ul
 {
     padding: 0;
@@ -71,28 +69,42 @@ body
     margin-left: auto;
     margin-right: 75px;
 }
-
 #nav li
 {
     width: 130px;
     padding: 0.5em;
 }
-
 #nav .special
 {
     color: var(--mint);
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
 }
-
 #nav a:hover
 {
-    size: 20px;
     font-weight: unset;
     background-color: var(--mint);
     color: var(--gray);
 }
 /*#endregion*/
+
+/*#endregion*/
+
+/*#region Body*/
+.main-body
+{
+    padding: 15px 50px;
+}
+a, a::after
+{
+    color: var(--gray);
+    text-decoration: none;
+}
+.highlight
+{
+    color: var(--mint);
+    font-weight: bold;
+}
 
 /*#endregion*/
 
@@ -115,30 +127,24 @@ body
 }
 /*#endregion*/
 
-/*#endregion*/
-
-/*index.html*/
+/*#region index.html*/
 /*#region Showcase*/
 #showcase
 {
-    padding: 85px;
     display: flex;
     flex-direction: row;
 }
-
 #showcase .portrait
 {
     margin-left: 75px;
 }
-
 #showcase .text-field
 {
-    margin-top: 70px;
+    margin-top: 25px;
     margin-left: 150px;
     min-width: 500px;
     flex-basis: 45%;
 }
-
 .text-field a
 {
     padding: 10px;
@@ -149,26 +155,7 @@ body
 }
 /*#endregion*/
 
-/*#region Cross-Flatform*/
-.container
-{
-    padding: 10px;
-}
-
-.container a
-{
-    text-decoration: none;
-    color: var(--mint);
-    font-weight: bold;
-}
-
-.header
-{
-    color: var(--mint);
-    font-weight: bold;
-    font-size: 30px;
-}
-
+/*#region Aside*/
 .aside
 {
     display: flex;
@@ -179,11 +166,42 @@ body
     right: 1%;
     top: 40%;
 }
-
 .aside ul
 {
     padding: 10px;
     list-style: none;
 }
+/*#endregion*/
+/*#endregion*/
 
+/*#region contact.html*/
+
+.info-box
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: var(--mint) 2px solid;
+    margin-top: -15px;
+    width: 500px;
+}
+.info-box ul
+{
+    padding: 0;
+    list-style: none;
+}
+.info-box li
+{
+    margin-left: 25px;
+    min-width: 150px;
+}
+.name ul
+{
+    font-weight: bold;
+    list-style: unset;
+}
+.detail, .detail a
+{
+    color: var(--mint);
+}
 /*#endregion*/
