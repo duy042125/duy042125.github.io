@@ -1,7 +1,8 @@
+/*#region Basic Layout*/
 :root
 {
     --mint: #15d8b7;
-    --white: #f3f3f3;
+    --white: #f0f0f0;
     --gray: #5e5e5e;
 }
 
@@ -24,13 +25,13 @@ body
     align-items: center;
     border-bottom: var(--mint) 4px solid;
 }
-
 #nav-bar a
 {
     padding: 20px;
     color: var(--grey);
     font-size: 30px;
     text-decoration: none;
+    text-align: center;
 }
 #icon
 {
@@ -48,7 +49,7 @@ body
     font-weight: bold;
     color: var(--mint);
 }
-#nav-bar ul #special
+#nav-bar ul .special
 {
     color: var(--mint);
     font-weight: bolder;
@@ -67,63 +68,15 @@ body
     margin-left: auto;
     margin-right: 75px;
 }
+
+#nav-bar ul a
+{
+    width: 130px;
+}
 #nav-bar ul a:hover, #nav-bar ul #special:hover
 {
     background-color: var(--mint);
     color: var(--gray);
-}
-/*#endregion*/
-
-/*#region Showcase*/
-#showcase
-{
-    padding: 85px;
-    display: flex;
-    flex-direction: row;
-}
-
-#showcase .portrait
-{
-    margin-left: 75px;
-}
-
-#showcase .text-field
-{
-    margin-left: 150px;
-    min-width: 500px;
-    flex-basis: 45%;
-}
-
-.text-field h2
-{
-    color: var(--mint);
-    margin-top: 10%;
-}
-
-.text-field a
-{
-    padding: 10px;
-    color: var(--grey);
-    font-size: 20px;
-    text-decoration: none;
-    background-color: var(--mint);
-}
-
-.aside
-{
-    display: flex;
-    flex-direction: column;
-    border: var(--mint) 2px solid;
-    border-radius: 30px;
-    position: fixed;
-    right: 1%;
-    top: 40%;
-}
-
-.aside ul
-{
-    padding: 10px;
-    list-style: none;
 }
 /*#endregion*/
 
@@ -144,4 +97,77 @@ body
 {
     padding-right: 50px;
 }
+/*#endregion*/
+
+/*#endregion*/
+
+/*index.html*/
+/*#region Showcase*/
+#showcase
+{
+    padding: 85px;
+    display: flex;
+    flex-direction: row;
+}
+
+#showcase .portrait
+{
+    margin-left: 75px;
+}
+
+#showcase .text-field
+{
+    margin-top: 70px;
+    margin-left: 150px;
+    min-width: 500px;
+    flex-basis: 45%;
+}
+
+.text-field a
+{
+    padding: 10px;
+    color: var(--grey);
+    font-size: 20px;
+    text-decoration: none;
+    background-color: var(--mint);
+}
+/*#endregion*/
+
+/*#region Cross-Flatform*/
+.container
+{
+    padding: 10px;
+}
+
+.container a
+{
+    text-decoration: none;
+    color: var(--mint);
+    font-weight: bold;
+}
+
+.header
+{
+    color: var(--mint);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.aside
+{
+    display: flex;
+    flex-direction: column;
+    border: var(--mint) 2px solid;
+    border-radius: 30px;
+    position: fixed;
+    right: 1%;
+    top: 40%;
+}
+
+.aside ul
+{
+    padding: 10px;
+    list-style: none;
+}
+
 /*#endregion*/
