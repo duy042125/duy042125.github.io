@@ -17,22 +17,23 @@ body
     padding: 0;
 }
 
-/*#region Navigation Bar*/
-#nav-bar
+/*#region Main Header*/
+#main-header
 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: var(--mint) 4px solid;
+    border-bottom: var(--mint) 3px solid;
 }
-#nav-bar a
+#main-header a
 {
-    padding: 20px;
-    color: var(--grey);
-    font-size: 30px;
     text-decoration: none;
     text-align: center;
+    color: var(--grey);
+    font-size: 20px;
 }
+
+/*#region Page Icon*/
 #icon
 {
     margin-left: 100px;
@@ -42,24 +43,26 @@ body
 }
 #icon a
 {
-    padding: 10px;
+    padding: 0.2em;
     margin: auto;
     font-size: 55px;
     border: var(--mint) 10px solid;
     font-weight: bold;
     color: var(--mint);
 }
-#nav-bar ul .special
-{
-    color: var(--mint);
-    font-weight: bolder;
-    font-size: 35px;
-}
 #icon h1
 {
-    padding-left: 5px;
+    padding-left: 2px;
 }
-#nav-bar ul
+/*#endregion*/
+
+/*#region Navigation Bar*/
+#nav
+{
+    margin-left: auto;
+}
+
+#nav ul
 {
     padding: 0;
     display: flex;
@@ -69,15 +72,28 @@ body
     margin-right: 75px;
 }
 
-#nav-bar ul a
+#nav li
 {
     width: 130px;
+    padding: 0.5em;
 }
-#nav-bar ul a:hover, #nav-bar ul #special:hover
+
+#nav .special
 {
+    color: var(--mint);
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#nav a:hover
+{
+    size: 20px;
+    font-weight: unset;
     background-color: var(--mint);
     color: var(--gray);
 }
+/*#endregion*/
+
 /*#endregion*/
 
 /*#region Footer*/
