@@ -141,12 +141,19 @@ h1, h2, h3, h4, h5
 }
 .portrait
 {
-    padding: 25px 75px;
+    padding: 1.5% 5%;
+    width: 25%;
+}
+.portrait img
+{
+    width: 100%;
+    height: auto;
+    min-width: 250px;
 }
 .text-field
 {
-    margin-top: 75px;
-    margin-left: 150px;
+    margin-top: 5%;
+    margin-left: 10%;
     min-width: 500px;
     flex-basis: 45%;
 }
@@ -179,8 +186,27 @@ h1, h2, h3, h4, h5
 /*#endregion*/
 /*#endregion*/
 
-/*#region contact.html*/
+/*#region experience.html*/
+.display-zone
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.display-zone h3, .display-zone h5
+{
+    margin: 0;
+}
+.container
+{
+    max-width: 30%;
+}
+/*#endregion*/
 
+/*#region skills.html & contact.html*/
 .info-box
 {
     display: flex;
@@ -209,25 +235,5 @@ h1, h2, h3, h4, h5
 .detail, .detail a
 {
     color: var(--mint);
-}
-/*#endregion*/
-
-/*#region experience.html*/
-.display-zone
-{
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-evenly;
-}
-.display-zone h3, .display-zone h5
-{
-    margin: 0;
-}
-.container
-{
-    max-width: 30%;
 }
 /*#endregion*/
