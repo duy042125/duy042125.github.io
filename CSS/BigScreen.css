@@ -7,8 +7,8 @@
 }
 body
 {
-    background-color: var(--white);
-    color: var(--gray);
+    background-color: var(--gray);
+    color: var(--white);
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.6em;
@@ -20,6 +20,7 @@ body
 /*#region Main Header*/
 #main-header
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,14 +30,12 @@ body
 {
     text-align: center;
     color: var(--grey);
-    font-size: 20px;
 }
 
 /*#region Page Icon*/
 #icon
 {
-    margin-left: 100px;
-    padding: 0;
+    padding: 0 75px 0 100px;
     display: flex;
     flex-direction: row;
 }
@@ -59,6 +58,8 @@ body
 #nav
 {
     margin-left: auto;
+    margin-right: 5%;
+    padding: 0;
 }
 #nav ul
 {
@@ -66,8 +67,6 @@ body
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-left: auto;
-    margin-right: 75px;
 }
 #nav li
 {
@@ -87,13 +86,12 @@ body
     color: var(--gray);
 }
 /*#endregion*/
-
 /*#endregion*/
 
 /*#region Body*/
 .main-body
 {
-    padding: 15px 50px;
+    padding: 35px 50px;
 }
 a, a::after
 {
@@ -105,6 +103,10 @@ a, a::after
     color: var(--mint);
     font-weight: bold;
 }
+h1, h2, h3, h4, h5
+{
+    margin: 0;
+}
 
 /*#endregion*/
 
@@ -114,8 +116,9 @@ a, a::after
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--gray);
-    color: var(--mint);
+    height: 40px;
+    background-color: var(--mint);
+    color: var(--gray);
     font-size: 15px;
     font-style: italic;
     text-align: right;
@@ -124,6 +127,7 @@ a, a::after
 #main-footer p
 {
     padding-right: 50px;
+    margin: 5px;
 }
 /*#endregion*/
 
@@ -133,14 +137,15 @@ a, a::after
 {
     display: flex;
     flex-direction: row;
+    margin-top: 5%;
 }
-#showcase .portrait
+.portrait
 {
-    margin-left: 75px;
+    padding: 25px 75px;
 }
-#showcase .text-field
+.text-field
 {
-    margin-top: 25px;
+    margin-top: 75px;
     margin-left: 150px;
     min-width: 500px;
     flex-basis: 45%;
@@ -164,7 +169,7 @@ a, a::after
     border-radius: 30px;
     position: fixed;
     right: 1%;
-    top: 40%;
+    top: 35%;
 }
 .aside ul
 {
@@ -180,10 +185,11 @@ a, a::after
 {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    border: var(--mint) 2px solid;
-    margin-top: -15px;
-    width: 500px;
+    padding: 10px 25px;
+    border: var(--mint) 2px solid;;
+    width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 .info-box ul
 {
@@ -203,5 +209,25 @@ a, a::after
 .detail, .detail a
 {
     color: var(--mint);
+}
+/*#endregion*/
+
+/*#region experience.html*/
+.display-zone
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.display-zone h3, .display-zone h5
+{
+    margin: 0;
+}
+.container
+{
+    max-width: 30%;
 }
 /*#endregion*/
