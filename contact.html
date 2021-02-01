@@ -2,7 +2,8 @@
 <html lang="en-US">
 	<head>
 		<title>Duy Nguyen</title>
-		<link rel="stylesheet" media="screen and (min-width: 1250px)" href="CSS/BigScreen.css">
+		<link rel="stylesheet" media="screen and (min-width: 1100px)" href="CSS/BigScreen.css">
+		<link rel="stylesheet" media="screen and (max-width: 1100px)" href="CSS/SmallScreen.css">
 		<meta name="description" content="Personal Webstie">
 		<meta name="keywords" content="Personal Website, Resume">
 		<meta name="author"	content="Duy Nguyen">
@@ -13,6 +14,7 @@
 				<a href="index.html">D</a>
 				<h1>uynguyen.pw</h1>
 			</div>
+			<!-- For big screen-->
 			<div id="nav">
 				<ul>
 					<a href="index.html"><li>Home</li></a>
@@ -22,7 +24,22 @@
 					<a href="#" class="special"><li>Contact</li></a>
 				</ul>
 			</div>
-        </nav>
+			<!-- For small screen-->
+			<div id="nav-mobile">
+				<div class="menu">
+					<button class="menu-icon">
+						<img src="Images/Menu-Icon.png" alt="Menu Icon">
+					</button>
+					<div class="menu-content">
+						<a href="index.html">Home</a>
+						<a href="experience.html">Experience</a>
+						<a href="skills.html">Skills</a>
+						<a href="project.html">Project</a>
+						<a href="#" class="special">Contact</a>
+					</div>
+				</div>
+			</div>
+		</nav>
 		<div class="main-body">
 			<h2 class="highlight">Peronsal Information</h2>
 			<div class="info-box">
