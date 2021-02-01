@@ -178,8 +178,8 @@ h1, h2, h3, h4, h5
 {
     margin-top: 5%;
     margin-left: 10%;
-    min-width: 500px;
     flex-basis: 45%;
+    height: fit-content;
 }
 .text-field a
 {
@@ -188,6 +188,15 @@ h1, h2, h3, h4, h5
     font-size: 20px;
     text-decoration: none;
     background-color: var(--mint);
+}
+@media only screen and (max-width: 850px)
+{
+    #showcase
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
 }
 /*#endregion*/
 
@@ -215,7 +224,7 @@ h1, h2, h3, h4, h5
 {
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-evenly;
@@ -226,7 +235,7 @@ h1, h2, h3, h4, h5
 }
 .container
 {
-    max-width: 30%;
+    padding: 15px 0px;
 }
 /*#endregion*/
 
