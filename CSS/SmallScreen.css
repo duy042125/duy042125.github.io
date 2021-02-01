@@ -71,7 +71,6 @@ body
 {
     color: var(--mint);
     font-weight: bolder;
-    font-size: 20px;
 }
 .menu-icon
 {
@@ -87,15 +86,16 @@ body
     background-color: var(--gray);
     color: var(--white);
     border: var(--mint) 2px solid;
-    width: 150px;
+    width: 180px;
     z-index: 1;
     right: 0;
+    font-size: 30px;
 }
 #nav-mobile a
 {
     color: var(--white);
     align-self: flex-start;
-    width: 130px;
+    width: 150px;
     padding: 0.5em;
     text-align: left;
 }
@@ -104,6 +104,7 @@ body
     font-weight: unset;
     background-color: var(--mint);
     color: var(--gray);
+    font-size: 30px;
 }
 .menu:hover .menu-content
 {
