@@ -70,12 +70,6 @@ body
 {
     display: none;
 }
-#nav-mobile 
-{
-    margin-left: auto;
-    margin-right: 2%;
-    padding: 0;
-}
 #nav-mobile .special
 {
     color: var(--mint);
@@ -84,9 +78,20 @@ body
 .menu-icon
 {
     background-color: var(--gray);
-    height: fit-content;
+    height: 100%;
     border: var(--mint) 2px solid;
     margin: 0;
+    margin-right: 3vw;
+    opacity: 0;
+    animation-name: menu-icon;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes menu-icon
+{
+    0%      {opacity: 0;}
+    100%    {opacity: 1;}
 }
 .menu-content
 {
@@ -96,7 +101,7 @@ body
     color: var(--white);
     border: var(--mint) 2px solid;
     width: 180px;
-    z-index: 1;
+    z-index: 3;
     right: 0;
     font-size: 30px;
 }
@@ -157,7 +162,10 @@ h1, h2, h3, h4, h5
     overflow-x: hidden;
     scroll-snap-align: center;
 }
-
+.tab-contener::-webkit-scrollbar
+{
+    width: 0;
+}
 .display-zone
 {
     margin-top: 15vh;
@@ -295,7 +303,7 @@ h1, h2, h3, h4, h5
 /*#region Aside*/
 .aside
 {
-    z-index: 2;
+    z-index: 1;
     height: fit-content;
     align-self: center;
     display: flex;

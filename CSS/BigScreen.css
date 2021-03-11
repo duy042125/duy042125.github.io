@@ -70,7 +70,7 @@ body
 {
     display: none;
 }
-#nav
+#nav #nav-mobile
 {
     margin-right: 3vw;
     height: 6.5vh;
@@ -174,7 +174,10 @@ h1, h2, h3, h4, h5
     overflow-x: hidden;
     scroll-snap-align: center;
 }
-
+.tab-contener::-webkit-scrollbar
+{
+    width: 0;
+}
 .display-zone
 {
     margin-top: 15vh;
@@ -312,7 +315,7 @@ h1, h2, h3, h4, h5
 /*#region Aside*/
 .aside
 {
-    z-index: 2;
+    z-index: 1;
     height: fit-content;
     align-self: center;
     display: flex;
