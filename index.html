@@ -9,65 +9,206 @@
 		<meta name="author"	content="Duy Nguyen">
 	</head>
 	<body>
-		<nav id="main-header">
-			<div id="icon">
-				<a href="index.html">D</a>
-				<h1>uynguyen.pw</h1>
+        <nav id="main-header">
+			<div>
+                <a id="icon" href="index.html">
+                    <h1>Duy</h1>
+                    <h2>Nguyen</h2>
+                    <h1>.pw</h1>
+                </a>
 			</div>
 			<!-- For big screen-->
 			<div id="nav">
 				<ul>
-					<a href="#" class="special"><li>Home</li></a>
-					<a href="experience.html"><li>Experience</li></a>
-					<a href="skills.html"><li>Skills</li></a>
-					<a href="project.html"><li>Project</li></a>
-					<a href="contact.html"><li>Contact</li></a>
+					<a href="#" id="nav-home"><li>Home</li></a>
+					<a href="#" id="nav-experience"><li>Experience</li></a>
+					<a href="#" id="nav-skills"><li>Skills</li></a>
+					<a href="#" id="nav-project"><li>Project</li></a>
+					<a href="#" id="nav-contact"><li>Contact</li></a>
 				</ul>
 			</div>
 			<!-- For small screen-->
 			<div id="nav-mobile">
 				<div class="menu">
 					<button class="menu-icon">
-						<img src="Images/Menu-Icon.png" alt="Menu Icon">
+						<img src="Images/Menu-Icon.png" alt="Menu Icon" sizes="50%">
 					</button>
 					<div class="menu-content">
-						<a href="#" class="special">Home</a>
-						<a href="experience.html">Experience</a>
-						<a href="skills.html">Skills</a>
-						<a href="project.html">Project</a>
+						<a href="#" id="nav-home">Home</a>
+						<a href="#" id="nav-experience">Experience</a>
+						<a href="#" id="nav-skills">Skills</a>
+						<a href="#" id="nav-project">Project</a>
 						<a href="contact.html">Contact</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 		<div class="main-body">
-			<section id="showcase">
-				<div class="portrait">
-					<picture>
-						<source srcset="Images/BigPortrait.jpg" media="(min-width: 1250px)">
-						<source srcset="Images/SmallPortrait.jpg">
-						<img src="Images/BigPortrait.jpg" alt="My Potrait">
-					</picture>
-				</div>
-				<div class="text-field">
-					<h2 class="highlight">Hello, I'm</h2>
-					<h1>Duy Nguyen</h1>
-					<h4>Student Programer and Developer</h4>
-					<p>I am double majoring in Mathematics and Computer Science at University of Wisconsin - Superior. I like to play sports and take picutres.</p>
-					<a href="Files/Resume.pdf" download="Resume.pdf">Hire me!</a>
-				</div>
-				<div class="aside">
-					<ul>
-						<a href="https://www.facebook.com/d04.21.25/" target="_blank"><li><img src="Images/Facebook-Icon.png" alt="icons"></li></a>
-						<a href="https://www.instagram.com/04.21.25/" target="_blank"><li><img src="Images/Instagram-Icon.png" alt="icons"></li></a>
-						<a href="https://github.com/duy042125" target="_blank"><li><img src="Images/Github-Icon.png" alt="icons"></li></a>
-						<a href="https://www.linkedin.com/in/duynguyen042125/" target="_blank"><li><img src="Images/Linked-In-Icon.png" alt="icons"></li></a>
-					</ul>
-				</div>
-			</section>
-		</div>
-		<footer id="main-footer">
+            <div id="home" class="tab-contener show-on-scroll">
+                <section id="showcase" class="show-on-scroll">
+                    <div class="portrait">
+                        <picture>
+                            <source srcset="Images/BigPortrait.jpg" media="(min-width: 1250px)">
+                            <source srcset="Images/SmallPortrait.jpg">
+                            <img src="Images/BigPortrait.jpg" alt="My Potrait">
+                        </picture>
+                    </div>
+                    <div class="text-field">
+                        <h2 class="highlight">Hello, I'm</h2>
+                        <h1>Duy Nguyen</h1>
+                        <h4>Student Programer and Developer</h4>
+                        <p>I am double majoring in Mathematics and Computer Science at University of Wisconsin - Superior. I like to play sports and take picutres.</p>
+                        <a href="Files/Resume.pdf" download="Resume.pdf">Hire me!</a>
+                    </div>
+                    <div class="aside">
+                        <ul>
+                            <a href="https://www.facebook.com/d04.21.25/" target="_blank"><li><img src="Images/Facebook-Icon.png" alt="icons"></li></a>
+                            <a href="https://www.instagram.com/04.21.25/" target="_blank"><li><img src="Images/Instagram-Icon.png" alt="icons"></li></a>
+                            <a href="https://github.com/duy042125" target="_blank"><li><img src="Images/Github-Icon.png" alt="icons"></li></a>
+                            <a href="https://www.linkedin.com/in/duynguyen042125/" target="_blank"><li><img src="Images/Linked-In-Icon.png" alt="icons"></li></a>
+                        </ul>
+                    </div>
+                </section>
+                <div id="gallery" class="show-on-scroll">
+                    <h3>Check out <br> my photos</h3>
+                    <div id="instag-photo">
+                        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                        <div class="elfsight-app-e113583a-a921-4d82-87e3-e72c7d0f6aa5"></div>
+                    </div>
+                </div>
+            </div>
+			<div id="experience" class="tab-contener show-on-scroll">
+                <ul class="display-zone">
+                    <li class="container">
+                        <h3 class="highlight">System Developer</h3>
+                        <h5>
+                            Creative Group - Superior, WI <br>
+                            (05/2019 to 08/2021)
+                        </h5>
+                        <ul>
+                            <li>I built the whole system from scratch by myself for a psychologist to manage his patient behavior changing.</li>
+                            <li>Coordinated system installations, testing and code corrections.</li> 
+                            <li>Recommended and executed plans to improve development tools and processes.</li> 
+                        </ul>
+                    </li>
+                    <li class="container">
+                        <h3 class="highlight">Middleware Developer</h3>
+                        <h5>
+                            Computer Sciences Capstone - Superior, WI <br>
+                            (08/2019 to 12/2019)
+                        </h5>
+                        <ul>
+                            <li>Provide the managing web system for University Admiration Office to send out bulk email for their clients and
+                                manage their information.</li>
+                            <li>Implemented and tested enhancement feature requests to improve product functionality and extend performance.</li> 
+                            <li>Recommended and executed plans to improve development tools and processes.</li> 
+                            <li>Working with 12-person team, discussed project roadblocks to drive issue resolution and promoted use of best
+                                practices.</li>
+                        </ul>
+                    </li>
+                    <li class="container">
+                        <h3 class="highlight">Web Guru</h3>
+                        <h5>
+                            UWS Mathematics & Computer Science Club - Superior, WI <br>
+                            (04/2018 to 05/2019)
+                        </h5>
+                        <ul>
+                            <li>Edit and organize the club website.</li>
+                            <li>Attend to club meetings and conferences.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="skills" class="tab-contener show-on-scroll">
+                <div class="display-zone">
+                    <h2 class="highlight">Programming Skills</h2>
+                    <div class="info-box">
+                        <div class="name">
+                            <ul>
+                                <li>Advance:</li>
+                                <li>Intermediate:</li>
+                                <li>Beginner:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>C#, Java, C++</li>
+                                <li>SQL, JavaScript, CSS, HTML5.</li>
+                                <li>Unity, C, ARM Assambling Language.</li></ul>
+                            </div>
+                    </div>
+                    <h2 class="highlight">Other Skills</h2>
+                    <div class="info-box">
+                        <div class="name">
+                            <ul>
+                                <li>Photography:</li>
+                                <li>Office:</li>
+                                <li>Model:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>DRLR, Adobe Lightroom</li>
+                                <li>Full Microsoft Office Suite</li>
+                                <li>Blender (Beginner)</li></ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div id="project" class="tab-contener show-on-scroll">
+                <ul class="display-zone">
+                    <li class="item">
+                        <a href="index.html">
+                            <img src="Images/duynguyen.pw.png" alt="Personal Website">
+                            <h4 class="highlight">Personal Website</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contact" class="tab-contener show-on-scroll">
+                <div class="display-zone">
+                    <h2 class="highlight">Peronsal Information</h2>
+                    <div class="info-box">
+                        <div class="name">
+                            <ul>
+                                <li>Location: </li>
+                                <li>Email:</li>
+                                <li>Phone Number:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Superior, Wisconsin, USA</li>
+                                <li>duy.h.nguyen.work@gmail.com</li>
+                                <li>(218) 940-2504</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="highlight">Social Media</h2>
+                    <div class="info-box">
+                        <div class="name">
+                            <ul>
+                                <li>Facebook:</li>
+                                <li>Instagram:</li>
+                                <li>Github:</li>
+                                <li>Link-In:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li><a href="https://www.facebook.com/d04.21.25/" target="_blank">@d.04.21.25</a></li>
+                                <li><a href="https://www.instagram.com/04.21.25/" target="_blank">@04.21.25</a></li>
+                                <li><a href="https://github.com/duy042125" target="_blank">@duy042125</a></li>
+                                <li><a href="https://www.linkedin.com/in/duynguyen042125/" target="_blank">@duynguyen042125</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="main-footer">
 			<p>Copyright &copy; 2021, Duy Nguyen's website</p>
-		</footer>
-	</body>
+        </footer>
+        <script src="JS/show-on-scroll.js"></script>
+    </body>
 </html>
