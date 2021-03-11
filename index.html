@@ -2,6 +2,7 @@
 <html lang="en-US">
 	<head>
 		<title>Duy Nguyen</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 		<link rel="stylesheet" media="screen and (min-width: 1100px)" href="CSS/BigScreen.css">
 		<link rel="stylesheet" media="screen and (max-width: 1100px)" href="CSS/SmallScreen.css">
 		<meta name="description" content="Personal Webstie">
@@ -34,17 +35,17 @@
 						<img src="Images/Menu-Icon.png" alt="Menu Icon" sizes="50%">
 					</button>
 					<div class="menu-content">
-						<a href="index.html" id="nav-home">Home</a>
-						<a href="#" id="nav-experience">Experience</a>
-						<a href="#" id="nav-skills">Skills</a>
-						<a href="#" id="nav-project">Project</a>
-						<a href="contact.html">Contact</a>
+						<a href="#home">Home</a>
+						<a href="#experience">Experience</a>
+						<a href="#skills">Skills</a>
+						<a href="#project">Project</a>
+						<a href="#contact">Contact</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 		<div class="main-body">
-            <div id="home" class="tab-contener show-on-scroll">
+            <div id="home" class="tab-contener">
                 <div class="portrait">
                     <picture>
                         <source srcset="Images/BigPortrait.jpg" media="(min-width: 1250px)">
@@ -68,16 +69,18 @@
                     </ul>
                 </div>
             </div>
-            <div id="gallery" class="tab-contener show-on-scroll">
-                <h3> I love to travel around places and <br> taking picture of the moments. <br> <br> You can check out <br> my photos here.</h3>
-                <div id="instag-photo">
+            <div id="gallery" class="tab-contener">
+                <div data-aos="fade-right">
+                    <h3> I love to travel around places and <br> taking picture of the moments. <br> <br> You can check out <br> my photos here.</h3>
+                </div>
+                <div id="instag-photo" data-aos="fade-left">
                     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                     <div class="elfsight-app-e113583a-a921-4d82-87e3-e72c7d0f6aa5"></div>
                 </div>
             </div>
-			<div id="experience" class="tab-contener show-on-scroll">
+			<div id="experience" class="tab-contener">
                 <ul class="display-zone">
-                    <li class="container">
+                    <li class="container" data-aos="fade-right">
                         <h3 class="highlight">System Developer</h3>
                         <h5>
                             Creative Group - Superior, WI <br>
@@ -89,7 +92,7 @@
                             <li>Recommended and executed plans to improve development tools and processes.</li> 
                         </ul>
                     </li>
-                    <li class="container">
+                    <li class="container" data-aos="fade-left">
                         <h3 class="highlight">Middleware Developer</h3>
                         <h5>
                             Computer Sciences Capstone - Superior, WI <br>
@@ -104,7 +107,7 @@
                                 practices.</li>
                         </ul>
                     </li>
-                    <li class="container">
+                    <li class="container" data-aos="fade-right">
                         <h3 class="highlight">Web Guru</h3>
                         <h5>
                             UWS Mathematics & Computer Science Club - Superior, WI <br>
@@ -117,10 +120,10 @@
                     </li>
                 </ul>
             </div>
-            <div id="skills" class="tab-contener show-on-scroll">
+            <div id="skills" class="tab-contener">
                 <div class="display-zone">
-                    <h2 class="highlight">Programming Skills</h2>
-                    <div class="info-box">
+                    <h2 class="highlight" data-aos="zoom-in">Programming Skills</h2>
+                    <div class="info-box" data-aos="slide-down">
                         <div class="name">
                             <ul>
                                 <li>Advance:</li>
@@ -135,8 +138,8 @@
                                 <li>Unity, C, ARM Assambling Language.</li></ul>
                             </div>
                     </div>
-                    <h2 class="highlight">Other Skills</h2>
-                    <div class="info-box">
+                    <h2 class="highlight" data-aos="zoom-in">Other Skills</h2>
+                    <div class="info-box" data-aos="slide-up">
                         <div class="name">
                             <ul>
                                 <li>Photography:</li>
@@ -153,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div id="project" class="tab-contener show-on-scroll">
+            <div id="project" class="tab-contener">
                 <ul class="display-zone">
                     <li class="item">
                         <a href="index.html">
@@ -163,8 +166,8 @@
                     </li>
                 </ul>
             </div>
-            <div id="contact" class="tab-contener show-on-scroll">
-                <div class="display-zone">
+            <div id="contact" class="tab-contener">
+                <div class="display-zone" data-aos="zoom-in">
                     <h2 class="highlight">Peronsal Information</h2>
                     <div class="info-box">
                         <div class="name">
@@ -182,7 +185,7 @@
                             </ul>
                         </div>
                     </div>
-                    <h2 class="highlight">Social Media</h2>
+                    <h2 class="highlight" >Social Media</h2>
                     <div class="info-box">
                         <div class="name">
                             <ul>
@@ -207,6 +210,9 @@
         <footer id="main-footer">
 			<p>Copyright &copy; 2021, Duy Nguyen's website</p>
         </footer>
-        <script src="JS/show-on-scroll.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({offset: 500});
+        </script>
     </body>
 </html>
