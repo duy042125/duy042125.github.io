@@ -1,0 +1,103 @@
+/*#region Layout & Variable*/
+:root
+{
+    --mint: #15d8b7;
+    --white: #f0f0f0;
+    --gray: #161616;
+
+}
+body
+{
+    background-color: var(--gray);
+    color: var(--white);
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar
+{
+    width: 0;
+}
+/*#endregion*/
+.main-header
+{
+	color: var(--mint);
+	text-align: center;
+}
+.main-body
+{
+    height: 100vh;
+    width: 100vw;
+    color: var(--white);
+}
+a, a::after
+{
+    color: var(--gray);
+    text-decoration: none;
+}
+.tab-contener
+{
+	margin: 0;
+	padding: 0;
+}
+#order-content
+{
+	border: salmon 2px solid;
+}
+#order-content	ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#order-content .items
+{
+	margin-left: 5px;
+	background-color: var(--mint);
+	color: var(--gray);
+	width: fit-content;
+	padding: 5px;
+	border: var(--mint) 1px solid;
+	border-radius: 75px;
+}
+#order-content .items:active
+{
+	background-color: var(--white);
+}
+#input
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#input-section
+{
+	display: flex;
+	flex-direction: row;
+}
+#input-section .input-number
+{
+	display: flex;
+	flex-direction: column;
+}
+#input-section .input-number .row
+{
+	display: flex;
+	flex-direction: row;
+}
+#input-section .input-confirm
+{
+	display: flex;
+	flex-direction: column;
+}
+.btn
+{
+	background-color: var(--mint);
+	color: var(--gray);
+	font-size: 30px;
+	width: 100px;
+	height: 100px;
+}

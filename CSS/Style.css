@@ -1,0 +1,231 @@
+/*#region Layout & Variable*/
+:root
+{
+    --mint: #15d8b7;
+    --white: #f0f0f0;
+    --gray: #161616;
+}
+body
+{
+    background-color: var(--gray);
+    color: var(--white);
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar
+{
+    width: 0;
+}
+/*#endregion*/
+
+/*#region Main Header*/
+#main-header
+{
+    width: 100vw; 
+    height: 6.5vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--gray);
+    z-index: 2;
+}
+#main-header a
+{
+    text-align: center;
+    color: var(--white);
+}
+
+/*#region Page Icon*/
+#icon
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 3vw;
+    opacity: 0;
+    animation-name: icon;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes icon
+{
+    0%      {left: -500px; opacity: 0;}
+    100%    {left: 0px; opacity: 1;}
+}
+#icon h1 h2
+{
+    font-weight: bold;
+}
+#icon h1
+{
+    color: var(--mint);
+}
+/*#endregion*/
+
+/*#region Navigation Bar*/
+#nav-mobile
+{
+    display: none;
+}
+#nav #nav-mobile
+{
+    margin-right: 3vw;
+    height: 6.5vh;
+}
+#nav a
+{
+    position: relative;
+    opacity: 0;
+    animation-name: nav;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+}
+#nav #nav-project
+{
+    animation-delay: 0.1s;
+}
+#nav #nav-home
+{
+    animation-delay: 0.2s;
+}
+#nav #nav-experience
+{
+    animation-delay: 0.3s;
+}
+#nav #nav-skills
+{
+    animation-delay: 0.4s;
+}
+#nav #nav-contact
+{
+    animation-delay: 0.5s;
+}
+@keyframes nav
+{
+    0%      {top: -500px; opacity: 0;}
+    100%    {top: 0px; opacity: 1;}
+}
+#nav ul
+{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+#nav li
+{
+    width: 7.5vw;
+    min-width: 130px;
+    padding: 0.5em;
+}
+#nav .special
+{
+    color: var(--mint);
+    font-weight: bolder;
+}
+#nav a:hover
+{
+    font-weight: unset;
+    background-color: var(--mint);
+    color: var(--gray);
+}
+
+/*#endregion*/
+/*#endregion*/
+
+/*#region Body*/
+.main-body
+{
+    height: 100vh;
+    width: 100vw;
+    color: var(--white);
+}
+a, a::after
+{
+    color: var(--gray);
+    text-decoration: none;
+}
+.highlight
+{
+    color: var(--mint);
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5
+{
+    margin: 0;
+}
+.tab-contener
+{
+    margin-top: 0.5vh;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-snap-align: start;
+    color: var(--white);
+}
+.tab-contener::-webkit-scrollbar
+{
+    width: 0;
+}
+.display-zone-v, .display-zone-h
+{
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 90vw;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.display-zone-h
+{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.display-zone-v
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.display-zone-v h3, .display-zone-v h5, .display-zone-h h3, .display-zone-h h5
+{
+    margin: 0;
+}
+
+/*#endregion*/
+
+/*#region Footer*/
+#main-footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 2.5vh;
+    background-color: var(--mint);
+    color: var(--gray);
+    border: var(--gray) 1px solid;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#main-footer p
+{
+    padding-right: 50px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: right;
+}
+/*#endregion*/

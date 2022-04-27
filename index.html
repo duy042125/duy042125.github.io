@@ -3,6 +3,7 @@
 	<head>
 		<title>Duy Nguyen</title>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <link rel="stylesheet" href="CSS/Style.css"/>
 		<link rel="stylesheet" media="screen and (min-width: 1100px)" href="CSS/BigScreen.css">
 		<link rel="stylesheet" media="screen and (max-width: 1100px)" href="CSS/SmallScreen.css">
 		<meta name="description" content="Personal Webstie">
@@ -21,10 +22,10 @@
 			<!-- For big screen-->
 			<div id="nav">
 				<ul>
+                    <a href="projects.html" id="nav-project"><li>Project</li></a>
 					<a href="#home" id="nav-home"><li>Home</li></a>
 					<a href="#experience" id="nav-experience"><li>Experience</li></a>
 					<a href="#skills" id="nav-skills"><li>Skills</li></a>
-					<a href="#project" id="nav-project"><li>Project</li></a>
 					<a href="#contact" id="nav-contact"><li>Contact</li></a>
 				</ul>
 			</div>
@@ -69,17 +70,8 @@
                     </ul>
                 </div>
             </div>
-            <div id="gallery" class="tab-contener">
-                <div data-aos="fade-right">
-                    <h3> I love to travel around places and <br> taking picture of the moments. <br> <br> You can check out <br> my photos here.</h3>
-                </div>
-                <div id="instag-photo" data-aos="fade-left">
-                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-e113583a-a921-4d82-87e3-e72c7d0f6aa5"></div>
-                </div>
-            </div>
 			<div id="experience" class="tab-contener">
-                <ul class="display-zone">
+                <ul class="display-zone-h">
                     <li class="container" data-aos="fade-right">
                         <h3 class="highlight">System Developer</h3>
                         <h5>
@@ -121,7 +113,7 @@
                 </ul>
             </div>
             <div id="skills" class="tab-contener">
-                <div class="display-zone">
+                <div class="display-zone-h">
                     <h2 class="highlight" data-aos="zoom-in">Programming Skills</h2>
                     <div class="info-box" data-aos="slide-down">
                         <div class="name">
@@ -156,18 +148,9 @@
                     </div>
                 </div>
             </div>
-            <div id="project" class="tab-contener">
-                <ul class="display-zone">
-                    <li class="item">
-                        <a href="index.html">
-                            <img src="Images/duynguyen.pw.png" alt="Personal Website">
-                            <h4 class="highlight">Personal Website</h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            
             <div id="contact" class="tab-contener">
-                <div class="display-zone" data-aos="zoom-in">
+                <div class="display-zone-h" data-aos="zoom-in">
                     <h2 class="highlight">Peronsal Information</h2>
                     <div class="info-box">
                         <div class="name">
@@ -212,7 +195,7 @@
         </footer>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init({offset: 500});
+            AOS.init({offset: 200});
         </script>
     </body>
 </html>

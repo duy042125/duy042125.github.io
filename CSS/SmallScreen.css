@@ -1,21 +1,3 @@
-/*#region Layout & Variable*/
-:root
-{
-    --mint: #15d8b7;
-    --white: #f0f0f0;
-    --gray: #161616;
-}
-body
-{
-    background-color: var(--gray);
-    color: var(--white);
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    line-height: 1.6em;
-    margin: 0;
-    padding: 0;
-}
-/*#endregion*/
 
 /*#region Main Header*/
 #main-header
@@ -126,86 +108,6 @@ body
     flex-direction: column;
 }
 /*#endregion*/
-/*#endregion*/
-
-/*#region Body*/
-.main-body
-{
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-}
-.main-body::-webkit-scrollbar
-{
-    width: 0;
-}
-a, a::after
-{
-    color: var(--gray);
-    text-decoration: none;
-}
-.highlight
-{
-    color: var(--mint);
-    font-weight: bold;
-}
-h1, h2, h3, h4, h5
-{
-    margin: 0;
-}
-.tab-contener
-{
-    padding-bottom: 0.2vh;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    scroll-snap-align: center;
-}
-.tab-contener::-webkit-scrollbar
-{
-    width: 0;
-}
-.display-zone
-{
-    margin-top: 15vh;
-    margin-left: 5vh;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: left;
-}
-.display-zone h3, .display-zone h5
-{
-    margin: 0;
-}
-
-/*#endregion*/
-
-/*#region Footer*/
-#main-footer
-{
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 2.5vh;
-    background-color: var(--mint);
-    color: var(--gray);
-    border: var(--gray) 1px solid;
-    z-index: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-#main-footer p
-{
-    padding-right: 50px;
-    font-size: 15px;
-    font-style: italic;
-    text-align: right;
-}
 /*#endregion*/
 
 /*#region index.html*/
