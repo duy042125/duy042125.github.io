@@ -1,0 +1,141 @@
+/* #region Layout & Variable */
+
+:root
+{
+    --blue: #81c8cd;
+    --white: #ffffff;
+    --black: #161616;
+}
+*, *::after, *::before
+{
+    box-sizing: border-box;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+*::-webkit-scrollbar
+{
+    width: 0;
+    
+}
+body
+{
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+    min-width: 100vh;
+    box-sizing: border-box;
+}
+html
+{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+/* #endregion */
+
+/* #region Header */
+
+#big-header
+{
+    background-color: var(--blue);
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    border: 2px solid red;
+    position: fixed;
+    top: 0;
+}
+#icon
+{
+    border: 2px solid red;
+}
+#nav-list
+{
+    display: grid;
+    grid-auto-flow: column;
+    flex-grow: 0.5;
+    border: 2px solid red;
+    margin-left: auto;
+}
+/* Web verson nav-bar */
+#big-header a
+{
+    color: var(--white);
+    padding: 0.5rem;
+    font-weight: bold;
+    margin: auto;
+}
+#big-header a:hover
+{
+    background-color: var(--black);
+    color: var(--blue);
+}
+
+/* Small & Mobile verson nav-bar  */
+
+/* #endregion */
+
+/* #region Main */
+section
+{
+    scroll-snap-align: start;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 7.5vh;
+}
+
+#intro
+{
+    background-color: var(--blue);
+}
+#promote
+{
+    background-color: var(--white);
+    color: var(--black);
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+#promote h1
+{
+    grid-column: span 4;
+    justify-self: center;
+    align-self: center;
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+.promote-container
+{
+    grid-area: "Contain";
+    border: 5px solid var(--blue);
+    border-radius: 15px;
+    padding: 2rem;
+    display: inherit;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 2.5rem;
+}
+.promote-container img
+{
+    justify-self: center;
+}
+.promote-container h2
+{
+    color: var(--blue);
+    font-size: 2rem;
+    padding: 0.75rem 0;
+    text-align: center;
+}
+.promote-container p
+{
+    background-color: var(--blue);
+    border-radius: 15px;
+    color: var(--white);
+    padding: 0.75rem;
+}
+
+/* #endregion */
