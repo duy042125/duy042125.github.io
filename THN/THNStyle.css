@@ -10,7 +10,7 @@
 {
     box-sizing: border-box;
     font-family:  Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.25em;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
 }
 body
 {
-    color: var(--white);
+    color: var(--black);
     height: 100%;
     width: 100%;
     min-width: 100vh;
@@ -45,7 +45,6 @@ html
     width: 100%;
     height: 7.5vh;
     display: flex;
-    border: 2px solid red;
     position: fixed;
     top: 0;
 }
@@ -58,7 +57,6 @@ html
     display: grid;
     grid-auto-flow: column;
     flex-grow: 0.5;
-    border: 2px solid red;
     margin-left: auto;
 }
 /* Web verson nav-bar */
@@ -67,12 +65,15 @@ html
     color: var(--white);
     padding: 0.5rem;
     font-weight: bold;
+    font-size: 1.75rem;
     margin: auto;
 }
 #big-header a:hover
 {
     background-color: var(--black);
     color: var(--blue);
+    border-radius: 15px;
+    padding: 0.5rem;
 }
 
 /* Small & Mobile verson nav-bar  */
@@ -89,14 +90,24 @@ section
     padding-top: 7.5vh;
 }
 
-#intro
+.special
 {
     background-color: var(--blue);
+    color: var(--white);
+}
+
+#intro
+{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#intro img
+{
+    width: 100%;
 }
 #promote
 {
-    background-color: var(--white);
-    color: var(--black);
     display: grid;
     grid-template-columns: repeat(4,25%);
 }
@@ -137,5 +148,46 @@ section
     color: var(--white);
     padding: 0.75rem;
 }
-
+#about-us
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#about-us .label
+{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.contact-container
+{
+    margin-top: 7.5rem;
+    grid-auto-flow: column;
+    list-style: none;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+}
+.contact-container li
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    align-items: center;
+}
+.contact-container img
+{
+    width: 2.5rem;
+    max-height: 2.5rem;
+    align-self: center;
+    margin: 0.75rem;
+}
+#copy-right
+{
+    grid-column: span 2;
+    margin-left: 4rem;
+    width: fit-content;
+    height: fit-content;
+}
 /* #endregion */
