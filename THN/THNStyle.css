@@ -161,12 +161,11 @@ section
 }
 .contact-container
 {
-    margin-top: 7.5rem;
     grid-auto-flow: column;
     list-style: none;
     height: fit-content;
     justify-content: center;
-    align-content: center;
+    margin: 7.5rem auto;
 }
 .contact-container li
 {
@@ -175,6 +174,13 @@ section
     font-size: 1.5rem;
     padding: 0.5rem;
     align-items: center;
+}
+.contact-container span
+{
+    text-align: right;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    width: 12.5rem;
 }
 .contact-container img
 {
