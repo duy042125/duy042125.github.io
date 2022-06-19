@@ -3,7 +3,8 @@
 :root
 {
     --blue: #81c8cd;
-    --lightgrey: #f2f2f2;
+    --lightgrey: #ececec;
+    --darkgrey: #cacaca;
     --white: #ffffff;
     --black: #161616;
 }
@@ -18,16 +19,10 @@
     line-height: 1.25em;
     color: var(--black);
 }
-*::-webkit-scrollbar
-{
-    width: 0;
-    
-}
 body
 {
     height: 100%;
     width: 100%;
-    min-width: 100vh;
     box-sizing: border-box;
 }
 html
@@ -48,11 +43,17 @@ html
     position: fixed;
     top: 0;
     overflow: visible;
-    background-color: var(--white);
+    background-color: var(--lightgrey);
 }
 #icon
 {
-    border: 2px solid red;
+    background-color: var(--lightgrey);
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+#icon img
+{
+    height: 3rem;
 }
 #nav-list
 {
@@ -72,8 +73,7 @@ html
 }
 #big-header a:hover, #active-nav
 {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--darkgrey);
     border-radius: 15px;
     padding: 0.5rem;
 }
@@ -90,40 +90,26 @@ section
     width: 100%;
     padding-top: 4rem;
 }
+
+/* #region Showcase */
+
 #showcase
 {
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: 50% 50%;
 }
-#product
+#banner
 {
-    display: inherit;
-    grid-template-rows: 20% 80%;
-    border: 2px solid red;
-}
-#product .label
-{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 3rem;
+    grid-column: span 3;
+    width: 45%;
+    justify-self: center;
     align-self: center;
-}
-#product-showcase
-{
-    border: 2px solid red;
 }
 #promote
 {
     display: grid;
-    grid-template-columns: repeat(4,25%);
-}
-#banner
-{
-    grid-column: span 4;
-    width: 45%;
-    justify-self: center;
-    align-self: center;
+    grid-template-columns: repeat(3,33%);
 }
 #promote h1
 {
@@ -137,7 +123,7 @@ section
 {
     grid-area: "Contain";
     background-color: var(--lightgrey);
-    border-radius: 15px;
+    border-radius: 1rem;
     padding: 1rem;
     display: inherit;
     justify-content: center;
@@ -161,11 +147,123 @@ section
     border-radius: 15px;
     padding: 0.75rem;
 }
+
+/* #endregion */
+
+/* #region Product */
+
+#product-category
+{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    border: 2px solid red;
+}
+#product-category .label
+{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2.5rem;
+    justify-self: center;
+}
+.showcase-category
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 7.5rem auto;
+    background-color: var(--lightgrey);
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 7.5rem;
+}
+.showcase-category label
+{
+    justify-self: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.showcase-header
+{
+    display: inherit;
+    grid-auto-flow: row;
+    align-self: center;
+    justify-self: center;
+}
+.showcase-img
+{
+    height: 6rem;
+    border: 2px solid red;
+    justify-self: center;
+}
+.showcase-area
+{
+    border: 2px solid red;
+}
+
+/* #endregion */
+
+/* #region Product Pages */
+
+.product
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    align-content: center;
+    justify-content: center;
+}
+.product h1
+{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.wrapper
+{
+    min-height: 25rem;
+    width: 100%;
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.product-container
+{
+    display: inherit;
+    padding: 1%;
+    margin: 2%;
+    box-sizing: border-box;
+    flex-direction: column;
+    border: 0.125rem solid var(--black);
+    border-radius: 25px;
+}
+.img-container
+{
+    display: inherit;
+    width: 17.5rem;
+    height: 17.5rem;
+}
+.product-container img
+{
+    align-self: center;
+    width: 100%;
+}
+.product-container label
+{
+    margin-top: 1rem;
+    font-size: 2rem;
+    align-self: center;
+}
+
+/* #endregion */
+
+/* #region Footer */
+
 footer
 {
     display: grid;
-    grid-template-columns: 25% 25%;
+    grid-template-columns: 25% 25% 50%;
     height: fit-content;
+    padding-top: 2rem;
     border: 2px solid red;
 }
 .contact-container
@@ -173,7 +271,7 @@ footer
     list-style: none;
     height: fit-content;
     justify-content: center;
-    margin: 2.5rem auto;
+    margin: 1rem 2rem;
     border: 2px solid red;
 }
 .contact-container .label
@@ -211,7 +309,17 @@ footer
 }
 #client-info
 {
-    grid-column: span 2;
+    border: 2px solid red;
+}
+.contact-container .contact-row
+{
+    border: 2px solid red;
+}
+.contact-container input, .contact-container textarea
+{
+    width: 95%;
+    justify-self: center;
+    padding: 1rem 0.5rem;
     border: 2px solid red;
 }
 #copy-right
@@ -223,3 +331,6 @@ footer
 }
 
 /* #endregion */
+
+/* #endregion */
+
