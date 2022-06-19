@@ -2,7 +2,7 @@
 
 :root
 {
-    --blue: #81c8cd;
+    --blue: #bce7ea;
     --lightgrey: #ececec;
     --darkgrey: #cacaca;
     --white: #ffffff;
@@ -85,7 +85,6 @@ html
 section
 {
     scroll-snap-align: start;
-    height: 100vh;
     min-height: 100vh;
     width: 100%;
     padding-top: 4rem;
@@ -95,54 +94,51 @@ section
 
 #showcase
 {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-direction: column;
 }
 #banner
 {
-    grid-column: span 3;
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+#banner img
+{
     width: 45%;
-    justify-self: center;
-    align-self: center;
+    padding: 1rem;
 }
 #promote
 {
-    display: grid;
-    grid-template-columns: repeat(3,33%);
-}
-#promote h1
-{
-    grid-column: span 4;
-    justify-self: center;
-    align-self: center;
-    font-size: 3rem;
-    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .promote-container
 {
-    grid-area: "Contain";
+    width: 22.5rem;
+    display: inherit;
+    flex-direction: column;
     background-color: var(--lightgrey);
     border-radius: 1rem;
     padding: 1rem;
-    display: inherit;
-    justify-content: center;
-    align-content: flex-start;
-    margin: 2rem;
 }
 .promote-container img
 {
     width: 5rem;
-    justify-self: center;
+    align-self: center;
 }
-.promote-container h2
+.promote-container h1
 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: 0.75rem 0;
     text-align: center;
 }
 .promote-container p
 {
+    font-size: 1.125rem;
     background-color: var(--blue);
     border-radius: 15px;
     padding: 0.75rem;
@@ -156,22 +152,20 @@ section
 {
     display: grid;
     grid-template-rows: 10% 90%;
-    border: 2px solid red;
 }
 #product-category .label
 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: bold;
     margin-left: 2.5rem;
     justify-self: center;
+    align-self: center;
 }
 .showcase-category
 {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 7.5rem auto;
-    background-color: var(--lightgrey);
-    border-radius: 1rem;
     margin: 1rem;
     height: 7.5rem;
 }
@@ -191,14 +185,25 @@ section
 .showcase-img
 {
     height: 6rem;
-    border: 2px solid red;
     justify-self: center;
 }
 .showcase-area
 {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
 }
-
+.showcase-area div
+{
+    display: inherit;
+    margin: 0.25rem;
+}
+.showcase-area img
+{
+    align-self: center;
+    justify-self: center;
+    width: 5rem;
+}
 /* #endregion */
 
 /* #region Product Pages */
@@ -272,22 +277,20 @@ footer
     grid-template-columns: 25% 25% 50%;
     height: fit-content;
     padding-top: 2rem;
-    border: 2px solid red;
 }
 .contact-container
 {
     list-style: none;
     height: fit-content;
     justify-content: center;
+    min-width: 10rem;
     margin: 1rem 2rem;
-    border: 2px solid red;
 }
 .contact-container .label
 {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0.25rem;
-    border: 2px solid red;
 }
 .contact-container li
 {
@@ -295,6 +298,8 @@ footer
     flex-direction: row;
     align-items: center;
     padding: 0.25rem;
+    
+    border: 2px solid red;
 }
 .contact-container span
 {
@@ -302,6 +307,8 @@ footer
     margin-right: 0.75rem;
     width: 8rem;
     font-weight: 600;
+    
+    border: 2px solid red;
 }
 .contact-container img
 {
@@ -309,16 +316,16 @@ footer
     max-height: 2rem;
     align-self: center;
     margin: 0.75rem;
+    
+    border: 2px solid red;
 }
 .contact-container a
 {
     color: var(--blue);
     font-weight: bold;
-}
-#client-info
-{
     border: 2px solid red;
 }
+
 .contact-container .contact-row
 {
     border: 2px solid red;
@@ -334,8 +341,9 @@ footer
 {
     grid-column: span 4;
     font-size: 0.9rem;
-    margin: 1rem;
-    border: 2px solid red;
+    padding: 0.25rem;
+    margin: 0.75rem;
+    background-color: var(--lightgrey);
 }
 
 /* #endregion */
