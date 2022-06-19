@@ -212,7 +212,15 @@ section
     align-content: center;
     justify-content: center;
 }
-.product h1
+.product .img-label
+{
+    display: inherit;
+    background-color: var(--lightgrey);
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+}
+.product .img-label h1
 {
     font-size: 3rem;
     padding: 1rem;
