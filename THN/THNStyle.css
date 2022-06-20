@@ -2,7 +2,7 @@
 
 :root
 {
-    --blue: #bce7ea;
+    --blue: #008cff;
     --lightgrey: #ececec;
     --darkgrey: #cacaca;
     --white: #ffffff;
@@ -298,8 +298,6 @@ footer
     flex-direction: row;
     align-items: center;
     padding: 0.25rem;
-    
-    border: 2px solid red;
 }
 .contact-container span
 {
@@ -307,8 +305,6 @@ footer
     margin-right: 0.75rem;
     width: 8rem;
     font-weight: 600;
-    
-    border: 2px solid red;
 }
 .contact-container img
 {
@@ -316,26 +312,21 @@ footer
     max-height: 2rem;
     align-self: center;
     margin: 0.75rem;
-    
-    border: 2px solid red;
 }
 .contact-container a
 {
     color: var(--blue);
     font-weight: bold;
-    border: 2px solid red;
 }
 
 .contact-container .contact-row
 {
-    border: 2px solid red;
 }
 .contact-container input, .contact-container textarea
 {
     width: 95%;
     justify-self: center;
     padding: 1rem 0.5rem;
-    border: 2px solid red;
 }
 #copy-right
 {
