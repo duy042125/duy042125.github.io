@@ -44,7 +44,6 @@ html {
 .banner-container {
     display: flex;
     width: 100%;
-    border: 2px solid red;
     height: 100%;
     overflow: hidden;
     z-index: -1;
@@ -332,10 +331,9 @@ footer {
     font-weight: bold;
 }
 
-.contact-container .contact-row {}
+/* .contact-container .contact-row {} */
 
-.contact-container input,
-.contact-container textarea {
+.contact-container input, .contact-container textarea {
     width: 95%;
     justify-self: center;
     padding: 1rem 0.5rem;
