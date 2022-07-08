@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/THN/THNStyle.css">
+        <script src="./script.js" defer></script>
         <title>THN Trading</title>
     </head>
+
     <body>
         <!-- Big Screen Navigation Bar -->
-
-        <div id="banner">
-            <div class="banner-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-        </div>
+        <div class="banner-container"><img src="./Files/BigBanner.jpg" alt=""></div>
         <header id="big-header">
             <a id="icon" href="./THN.html"><img src="./Files/THNIcon.jpg" alt=""></a>
             <nav id="nav-list">
-                <a href="./Grocery.html">Grocery</a>
-                <a href="./Laptop.html">Laptop</a>
-                <a href="./Cosmetic.html">Cosmetic</a>
-                <a href="./Communication.html">Communication</a>
-                <a href="#about-us">About Us</a>
+                <a href="THN.html" class="nav-item">Home</a>
+                <div class="dropdown" data-dropdown>
+                    <button class="dropdown-header nav-item" data-dropdown-button>Products</button>
+                    <div class="dropdown-container">
+                        <a href="./Grocery.html" class="dropdown-item">Grocery</a>
+                        <a href="./Laptop.html" class="dropdown-item">Laptop</a>
+                        <a href="./Cosmetic.html" class="dropdown-item">Cosmetic</a>
+                        <a href="./Communication.html" class="dropdown-item">Communication</a>
+                    </div>
+                </div>
+                <a href="#about-us" class="nav-item">About Us</a>
             </nav>
         </header>
 
         <!-- Small Screen Navigation Bar -->
-        <header id="small-header"> 
+        <header id="small-header">
         </header>
         <!-- Main body -->
         <main>
             <section id="showcase">
-               <div id="promote">
+                <div id="promote">
                     <div class="promote-container">
                         <img src="./Files/PriceIcon.png" alt="Price">
                         <h1>Best pricing</h1>
                         <p>
-                            We are here to provide for our customers the fastest 
+                            We are here to provide for our customers the fastest
                             updates on pricing and order procession time frame.
                         </p>
                     </div>
@@ -109,4 +115,5 @@
             </div>
         </footer>
     </body>
+
 </html>
