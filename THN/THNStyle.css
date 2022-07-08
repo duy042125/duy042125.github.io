@@ -5,7 +5,7 @@
     /* Setting Colors */
     --blue: #94cfff;
     --lightgrey: #ececec;
-    --darkgrey: #cacaca;
+    --darkgrey: #8f8f8f;
     --white: #ffffff;
     --black: #161616;
 }
@@ -114,6 +114,7 @@ html
     font-weight: bold;
     font-size: 1.5rem;
     align-items: center;
+    transition: 0.5s;
 }
 
 .dropdown
@@ -144,6 +145,7 @@ html
     font-size: 1.25rem;
     font-weight: bold;
     padding: 0.5rem;
+    transition: 0.5s;
 }
 
 .dropdown.active > .dropdown-header + .dropdown-container
@@ -168,6 +170,7 @@ html
 .dropdown-item:hover
 {
     background-color: var(--darkgrey);
+    color: var(--lightgrey);
     border-radius: 15px;
 }
 
