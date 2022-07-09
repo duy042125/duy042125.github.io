@@ -382,8 +382,6 @@ section
 
 /* #region Footer */
 
-
-
 footer
 {
     display: grid;
@@ -437,8 +435,6 @@ footer
     color: var(--blue);
     font-weight: bold;
 }
-
-/* .contact-container .contact-row {} */
 
 .contact-container input,
 .contact-container textarea
