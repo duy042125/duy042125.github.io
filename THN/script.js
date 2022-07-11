@@ -1,6 +1,5 @@
 document.addEventListener("click", e =>
 {
-    debugger;
     const isDropdownButton = e.target.matches("[data-dropdown-button]");
     if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
 

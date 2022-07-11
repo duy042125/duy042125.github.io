@@ -29,7 +29,6 @@
                 <a href="./THN.html#about-us" class="nav-item">About Us</a>
             </nav>
         </header>
-
         <!-- Small Screen Navigation Bar -->
         <header id="small-header">
         </header>
@@ -63,14 +62,34 @@
             </section>
         </main>
         <footer id="about-us">
-            <ul class="contact-container">
-                <li class="label">Contact Hours</li>
+            <form class="contact-container" id="contact-form">
+                <div class="label">Contact us:</div>
+                <li>
+                    <label class="label" for="client-name">Name</label>
+                    <input type="text" id="client-name">
+                </li>
+                <li>
+                    <label class="label" for="client-email">Email</label>
+                    <input type="email" id="client-email">
+                </li>
+                <li>
+                    <label class="label" for="client-phone">Phone Number</label>
+                    <input type="tel" id="client-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </li>
+                <li>
+                    <label class="label" for="client-message">Message</label>
+                    <textarea id="client-message"></textarea>
+                </li>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+            <ul class="contact-container"  id="open-hour">
+                <div class="label">Contact Hours</div>
                 <li><span>Monday - Friday:</span>9am - 5pm</li>
                 <li><span>Saturday:</span> 10am - 5pm</li>
                 <li><span>Sunday:</span> Closed</li>
             </ul>
             <ul class="contact-container">
-                <li class="label">THN Trading</li>
+                <div class="label">THN Trading</div>
                 <li>
                     <img src="./Files/AddressIcon.png" alt="">
                     10111 Wilcrest Drive Unit 206, <br>
@@ -90,26 +109,6 @@
                     <a href="https://www.facebook.com/thntrading02">THN-Trading Facebook</a>
                 </li>
             </ul>
-            <form class="contact-container">
-                <div class="label">Contact us:</div>
-                <div>
-                    <label for="client-name">Name</label>
-                    <input type="text" id="client-name">
-                </div>
-                <div>
-                    <label for="client-email">Email</label>
-                    <input type="email" id="client-email">
-                </div>
-                <div>
-                    <label for="client-phone">Phone</label>
-                    <input type="tel" id="client-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                </div>
-                <div>
-                    <label for="client-message">Message</label>
-                    <textarea id="client-message"></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
             <div id="copy-right">
                 Copyright © 2018 THN TRADING - All Rights Reserved.
             </div>
