@@ -3,7 +3,7 @@
 :root
 {
     /* Setting Colors */
-    --blue: #94cfff;
+    --blue: #1596ff;
     --lightgrey: #ececec;
     --darkgrey: #8f8f8f;
     --white: #ffffff;
@@ -36,6 +36,7 @@ body
 html
 {
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 /* #endregion */
@@ -84,6 +85,7 @@ html
     height: fit-content;
     border-radius: 1rem;
     padding: 0.75rem;
+    transition: 0.5s;
 }
 
 #icon img
@@ -489,7 +491,7 @@ footer
 {
     width: 100%;
     justify-self: center;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
 }
 
 #submit
@@ -499,6 +501,7 @@ footer
     background-color: var(--yellow);
     border: none;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 #submit:hover
