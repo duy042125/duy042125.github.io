@@ -20,7 +20,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.25em;
     color: var(--black);
 }
@@ -121,6 +121,8 @@ html
     transition: 0.5s;
 }
 
+/* #region Dropdown */
+
 .dropdown
 {
     position: relative;
@@ -128,6 +130,7 @@ html
 
 .dropdown-container
 {
+    width: 13rem;
     position: absolute;
     left: 0;
     top: calc(100% + .25rem);
@@ -161,6 +164,8 @@ html
 
 /* #endregion */
 
+/* #endregion */
+
 /* #region Mobile verson nav-bar */
 
 
@@ -180,7 +185,7 @@ html
 
 /* #endregion */
 
-/* #region Main */
+/* #region Main Page */
 
 section
 {
@@ -312,6 +317,8 @@ section
 
 /* #endregion */
 
+/* #endregion */
+
 /* #region Product Pages */
 
 .product
@@ -381,6 +388,15 @@ section
 }
 
 /* #endregion */
+
+/* #region Comunication Page */
+
+.telecomService-container
+{
+    border: 2px solid;
+    height: fit-content;
+    box-sizing:content-box;
+}
 
 /* #endregion */
 
