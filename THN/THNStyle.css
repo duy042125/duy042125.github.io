@@ -394,8 +394,32 @@ section
 .telecomService-container
 {
     border: 2px solid;
-    height: fit-content;
-    box-sizing:content-box;
+    border-radius: 25px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.telecomService-container > h1
+{
+    font-size: 1.5rem;
+}
+
+.telecomService-container > section
+{
+    padding: 0.5rem;
+}
+
+.telecomService-container img
+{
+    width: 7.5rem;
+}
+
+.telecomService-container #submit
+{
+    margin-top: 1rem;
 }
 
 /* #endregion */
