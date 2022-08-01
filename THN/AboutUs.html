@@ -11,8 +11,8 @@
     </head>
 
     <body>
-        <!-- Big Screen Navigation Bar -->
         <div class="banner-container"><img src="./Files/BigBanner.jpg" alt=""></div>
+        <!-- Big Screen Navigation Bar -->
         <header id="big-header">
             <nav id="nav-list">
                 <a href="THN.html" class="nav-item">Home</a>
@@ -34,27 +34,54 @@
         </header>
         <!-- Main body -->
         <main>
-            <div class="label">WELLCOME TO BUSSINIES WITH US</div>
-            <section class="showcase-container">
-                <div class="label">Laptops & Phones new arrival</div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-            </section>
-            <section class="showcase-container">
-                <div class="label">Cosmetic price</div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-            </section>
-            <section class="showcase-container">
-                <div class="label">Perfume just arrived</div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
-                <div class="gif-container"><img src="./Files/BigBanner.jpg" alt=""></div>
+            <section class="promote">
+                <div class="promote-container">
+                    <img src="./Files/PriceIcon.png" alt="Price">
+                    <h1>Best pricing</h1>
+                    <p>
+                        We are here to provide for our customers the fastest
+                        updates on pricing and order procession time frame.
+                    </p>
+                </div>
+                <div class="promote-container">
+                    <img src="./Files/DiscountIcon.png" alt="Discount">
+                    <h1>Discount on bulk</h1>
+                    <p>
+                        We Provide Flexible Pricing and discount when you order in bulk.
+                    </p>
+                </div>
+                <div class="promote-container">
+                    <img src="./Files/QualityIcon.png" alt="Quality">
+                    <h1>Best quality guarantee</h1>
+                    <p>
+                        We committed to provide you the best quality of products in our list of products.
+                    </p>
+                </div>
             </section>
         </main>
         <footer id="about-us">
+            <form class="contact-container" id="contact-form"
+                action="mailto:hoangduy.hrc@gmail.com?subject=Mail from thntrading.com" method="post"
+                enctype="text/plain">
+                <div class="label">Contact us:</div>
+                <li>
+                    <label class="label" for="client-name">Name</label>
+                    <input type="text" id="client-name">
+                </li>
+                <li>
+                    <label class="label" for="client-email">Email</label>
+                    <input type="email" id="client-email">
+                </li>
+                <li>
+                    <label class="label" for="client-phone">Phone Number</label>
+                    <input type="tel" id="client-phone">
+                </li>
+                <li>
+                    <label class="label" for="client-message">Message</label>
+                    <textarea id="client-message"></textarea>
+                </li>
+                <button id="submit" type="submit">Submit</button>
+            </form>
             <ul class="contact-container" id="open-hour">
                 <div class="label">Contact Hours</div>
                 <li><span>Monday - Friday:</span>9am - 5pm</li>

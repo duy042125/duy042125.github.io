@@ -41,25 +41,13 @@ html
 
 /* #endregion */
 
-/* #region Header */
-
-#big-header
-{
-    width: 100%;
-    height: 3.5rem;
-    display: flex;
-    position: sticky;
-    top: 0;
-    background-color: var(--yellow);
-}
-
 /* #region Banner */
 
 .banner-container
 {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 60vh;
     overflow: hidden;
     z-index: -1;
 }
@@ -75,27 +63,20 @@ html
 
 /* #endregion */
 
-/* #region Icon */
+/* #region Header */
 
-#icon
+#big-header
 {
-    margin-left: 7.5%;
-    background-color: var(--yellow);
+    width: 100%;
+    height: 3.5rem;
     display: flex;
-    height: fit-content;
-    border-radius: 1rem;
-    padding: 0.75rem;
-    transition: 0.5s;
+    flex-grow: 1;
+    flex-basis: 1;
+    position: sticky;
+    top: 0;
+    background-color: var(--yellow);
+    justify-content: space-evenly;
 }
-
-#icon img
-{
-    height: 3rem;
-    justify-self: center;
-    align-self: center;
-}
-
-/* #endregion */
 
 /* #region Web verson nav-bar */
 
@@ -104,8 +85,6 @@ html
     display: flex;
     grid-auto-flow: column;
     gap: 2rem;
-    margin-left: auto;
-    margin-right: 3rem;
 }
 
 .nav-item
@@ -189,29 +168,75 @@ html
 
 section
 {
-    padding-top: 4rem;
+    margin-top: 4rem;
+}
+
+main > .label
+{
+    background-color: var(--yellow);
+    width: fit-content;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 /* #region Showcase */
 
-#showcase
+.showcase-container
+{
+    width: 97.5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    border: 3px solid var(--black);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.showcase-container .label
+{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.gif-container
+{
+    width: 33%;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
+.gif-container img
+{
+    width: 100%;
+}
+
+/* #endregion */
+
+/* #region AboutUs - Promote */
+
+.promote
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #banner img
 {
     width: 45%;
     padding: 1rem;
-}
-
-#promote
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .promote-container
@@ -244,75 +269,6 @@ section
     border-radius: 15px;
     padding: 0.75rem;
     text-align: center;
-}
-
-/* #endregion */
-
-/* #region Product */
-
-#product-category
-{
-    display: grid;
-    grid-template-rows: 10% 90%;
-}
-
-#product-category .label
-{
-    font-size: 2.25rem;
-    font-weight: bold;
-    margin-left: 2.5rem;
-    justify-self: center;
-    align-self: center;
-}
-
-.showcase-category
-{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 7.5rem auto;
-    margin: 1rem;
-    height: 7.5rem;
-}
-
-.showcase-category label
-{
-    justify-self: center;
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.showcase-header
-{
-    display: inherit;
-    grid-auto-flow: row;
-    align-self: center;
-    justify-self: center;
-}
-
-.showcase-img
-{
-    height: 6rem;
-    justify-self: center;
-}
-
-.showcase-area
-{
-    display: flex;
-    flex-direction: row;
-    overflow: scroll;
-}
-
-.showcase-area div
-{
-    display: inherit;
-    margin: 0.25rem;
-}
-
-.showcase-area img
-{
-    align-self: center;
-    justify-self: center;
-    width: 5rem;
 }
 
 /* #endregion */
@@ -512,6 +468,8 @@ footer
 
 /* #endregion */
 
+/* #region Contact Form */
+
 #contact-form
 {
     width: 100%;
@@ -550,6 +508,8 @@ footer
     background-color: var(--black);
     color: var(--yellow);
 }
+
+/* #endregion */
 
 #copy-right
 {
