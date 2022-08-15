@@ -147,8 +147,6 @@ html
 
 /* #region Mobile verson nav-bar */
 
-
-
 /* #endregion */
 
 /* Hover effect */
@@ -242,7 +240,7 @@ main > .label
 .promote-container
 {
     width: 22.5rem;
-    display: inherit;
+    display: flex;
     flex-direction: column;
     background-color: var(--yellow);
     border-radius: 1rem;
@@ -345,7 +343,16 @@ main > .label
 
 /* #endregion */
 
-/* #region Comunication Page */
+/* #region Telecom Service Page */
+
+#showcase
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px;
+}
 
 .telecomService-container
 {
