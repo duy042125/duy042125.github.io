@@ -125,6 +125,7 @@ html
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    z-index: 1;
 }
 
 .dropdown-item
