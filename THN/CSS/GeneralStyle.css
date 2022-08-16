@@ -76,6 +76,7 @@ html
     top: 0;
     background-color: var(--yellow);
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 /* #region Web verson nav-bar */
