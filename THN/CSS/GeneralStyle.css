@@ -3,12 +3,12 @@
 :root
 {
     /* Setting Colors */
-    --blue: #1596ff;
-    --lightgrey: #ececec;
+    --blue: #b4ddff;
+    --lightgrey: #efefef;
     --darkgrey: #8f8f8f;
     --white: #ffffff;
     --black: #161616;
-    --yellow: #ffcf01;
+    --yellow: #fff2b7;
 }
 
 *,
@@ -19,7 +19,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.25em;
     color: var(--black);
@@ -155,8 +155,8 @@ html
 #icon:hover,
 .dropdown-item:hover
 {
-    background-color: var(--black);
-    color: var(--yellow);
+    background-color: var(--darkgrey);
+    color: var(--white);
     border-radius: 15px;
 }
 
@@ -171,20 +171,21 @@ section
 
 main > .label
 {
-    background-color: var(--yellow);
+    background-color: var(--lightgrey);
     width: fit-content;
     margin: 2rem;
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: bolder;
+    margin: 2.5% auto;
 }
 
 /* #region Showcase */
 
 .showcase-container
 {
-    width: 97.5%;
+
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -193,24 +194,38 @@ main > .label
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    border: 3px solid var(--black);
     border-radius: 15px;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1% 10%;
 }
 
 .showcase-container .label
 {
     width: 100%;
-    padding: 0.5rem;
+    padding-bottom: 4%;
     font-size: 1.25rem;
     font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+.showcase-container .label::after
+{
+    content: '';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--black);
+    left: 0;
+    top: 2rem;
+    z-index: -1;
 }
 
 .gif-container
 {
-    width: 33%;
-    min-width: 400px;
+    width: 25%;
+    min-width: 300px;
     box-sizing: border-box;
 }
 
@@ -280,7 +295,7 @@ main > .label
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 4rem;
+    padding-top: 2.5%;
     align-content: center;
     justify-content: center;
 }
@@ -292,17 +307,13 @@ main > .label
     justify-content: center;
     align-content: center;
     margin: 1rem;
-}
-
-.product .img-label h1
-{
     font-size: 2.5rem;
     padding: 0.5rem;
 }
 
 .wrapper
 {
-    min-height: 25rem;
+    min-height: 20rem;
     width: 100%;
     display: inherit;
     flex-wrap: wrap;
@@ -317,15 +328,14 @@ main > .label
     margin: 2%;
     box-sizing: border-box;
     flex-direction: column;
-    border: 0.125rem solid var(--black);
     border-radius: 25px;
 }
 
 .img-container
 {
     display: inherit;
-    width: 17.5rem;
-    height: 17.5rem;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
 .product-container img
@@ -337,7 +347,7 @@ main > .label
 .product-container label
 {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5em;
     align-self: center;
 }
 
@@ -394,12 +404,12 @@ main > .label
 
 footer
 {
-    padding-top: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-grow: 1;
+    background-color: var(--lightgrey);
 }
 
 .contact-container
@@ -526,7 +536,7 @@ footer
     height: fit-content;
     font-size: 0.9rem;
     padding: 0.25rem;
-    margin: 0.75rem;
+    margin: 0.5rem;
     background-color: var(--lightgrey);
 }
 
