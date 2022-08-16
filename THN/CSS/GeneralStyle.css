@@ -244,6 +244,7 @@ main > .label
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0 5%;
 }
 
 #banner img
@@ -282,6 +283,45 @@ main > .label
     border-radius: 15px;
     padding: 0.75rem;
     text-align: center;
+}
+
+.input-area
+{
+    padding: 0 5rem 2rem 5rem;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+
+.input-area input,
+.input-area textarea,
+.input-area button
+{
+    margin-top: 15px;
+    padding: 15px;
+    border-color: var(--grey);
+    background-color: var(--lightgrey);
+    border: none;
+}
+
+#name,
+#message,
+.input-area button
+{
+    grid-column: span 2;
+}
+
+.input-area button
+{
+    border: none;
+    width: fit-content;
+    background-color: var(--darkgrey);
+    color: var(--white);
+}
+#message
+{
+    min-height: 10rem;
+    resize: none;
 }
 
 /* #endregion */
