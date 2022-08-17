@@ -62,7 +62,9 @@ html
 
 /* #region Header */
 
-#big-header
+/* #region Web verson nav-bar */
+
+header
 {
     width: 100%;
     height: 3rem;
@@ -76,7 +78,10 @@ html
     z-index: 1;
 }
 
-/* #region Web verson nav-bar */
+#menu-container
+{
+    display: none;
+}
 
 #nav-list
 {
@@ -109,7 +114,6 @@ html
 {
     width: 13rem;
     position: absolute;
-    left: 0;
     top: calc(100% + .25rem);
     background-color: var(--white);
     padding: .75rem;
@@ -123,6 +127,14 @@ html
     flex-direction: column;
     gap: .25rem;
     z-index: 1;
+}
+
+@media screen and (min-width: 701px)
+{
+    .dropdown-container
+    {
+        left: 0;
+    }
 }
 
 .dropdown-item
@@ -145,6 +157,48 @@ html
 /* #endregion */
 
 /* #region Mobile verson nav-bar */
+
+@media screen and (max-width: 700px)
+{
+    #nav-list
+    {
+        display: none;
+    }
+
+    .nav-item
+    {
+        transition: none;
+    }
+
+    #menu-container
+    {
+        display: block;
+        position: absolute;
+        top: 4.5px;
+        right: 2.5%;
+    }
+
+    #menu
+    {
+        border: none;
+        background-color: var(--yellow);
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu:hover,
+    #menu:active
+    {
+        background-color: var(--blue);
+    }
+
+    .dropdown-container
+    {
+        right: 0px;
+    }
+}
 
 /* #endregion */
 
@@ -458,18 +512,11 @@ footer
     height: fit-content;
     width: fit-content;
     max-width: 50%;
-    margin: 1rem 2rem;
+    margin: 1% 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 1;
-    padding: 1rem;
-}
-
-.contact-container > li
-{
-    flex-basis: 50%;
-    flex-wrap: wrap;
+    padding: 1%;
 }
 
 #open-hour
