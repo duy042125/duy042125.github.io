@@ -232,6 +232,7 @@ main > .label
     font-size: 1.5rem;
     font-weight: bolder;
     margin: 2.5% auto;
+    text-align: center;
 }
 
 /* #region Showcase */
@@ -255,24 +256,17 @@ main > .label
 .showcase-container .label
 {
     width: 100%;
-    padding-bottom: 4%;
     font-size: 1.25rem;
     font-weight: bold;
-    position: relative;
-    display: inline-block;
     z-index: -1;
 }
 
-.showcase-container .label::after
+.divider
 {
-    content: '';
-    height: 3px;
+    height: 4px;
     width: 100%;
-    position: absolute;
-    background-color: var(--black);
-    left: 0;
-    top: 2rem;
-    z-index: -1;
+    background-color: var(--darkgrey);
+    margin: 15px 0 40px;
 }
 
 .gif-container
@@ -428,8 +422,18 @@ main > .label
 .img-container
 {
     display: inherit;
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 225px;
+    height: 225px;
+}
+
+@media screen and (max-width: 700px)
+{
+    .img-container
+    {
+        display: inherit;
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .product-container img
