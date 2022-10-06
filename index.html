@@ -1,207 +1,109 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
     <head>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="/CSS/Style.css" />
-        <!-- <link rel="stylesheet" media="screen and (min-width: 1100px)" href="CSS/BigScreen.css">
-		<link rel="stylesheet" media="screen and (max-width: 1100px)" href="CSS/SmallScreen.css"> -->
-        <meta name="description" content="Personal Webstie">
-        <meta name="keywords" content="Personal Website, Resume">
-        <meta name="author" content="Duy Nguyen">
-        <title>Duy Nguyen</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/GeneralStyle.css">
+        <script src="/JS/DropDown.js" defer></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>THN Trading</title>
     </head>
 
     <body>
-        <div id="background"></div>
-        <nav id="main-header">
-            <div id="icon" background="">
-                <a href="index.html">
-                    <h4>Duy</h4>
-                    <h4 class="special">Nguyen</h4>
-                    <h4>.pw</h4>
-                </a>
-            </div>
-
-            <!-- For big screen-->
-            <div id="nav-web">
-                <a href="/THN/index.html" id="nav-project">Project</a>
-                <a href="#home" id="nav-home">Home</a>
-                <a href="#experience" id="nav-experience">Experience</a>
-                <a href="#skills" id="nav-skills">Skills</a>
-                <a href="#contact" id="nav-contact">Contact</a>
-                <a href="#About-Me" id="nav-about">About Me</a>
-            </div>
-
-            <!-- For small screen-->
-            <div id="nav-mobile">
-                <div class="menu">
-                    <button class="menu-icon">
-                        <img src="Images/Menu-Icon.png" alt="Menu Icon" sizes="50%">
-                    </button>
-                    <div class="menu-content">
-                        <a href="#home">Home</a>
-                        <a href="#experience">Experience</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#project">Project</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <!-- <div class="main-body">
-            <div id="home" class="tab-contener">
-                <div class="portrait">
-                    <picture>
-                        <source srcset="Images/BigPortrait.jpg" media="(min-width: 1250px)">
-                        <source srcset="Images/SmallPortrait.jpg">
-                        <img src="Images/BigPortrait.jpg" alt="My Potrait">
-                    </picture>
-                </div>
-                <div class="text-field">
-                    <h2 class="highlight">Hello, I'm</h2>
-                    <h1>Duy Nguyen</h1>
-                    <h4>Student Programer and Developer</h4>
-                    <p>I am double majoring in Mathematics and Computer Science at University of Wisconsin - Superior. I am young, enthusiastic and eager to improve myself.</p>
-                    <a href="Files/Resume.pdf" download="Resume.pdf">Hire me!</a>
-                </div>
-                <div class="aside">
-                    <ul>
-                        <a href="https://www.facebook.com/d04.21.25/" target="_blank"><li><img src="Images/Facebook-Icon.png" alt="icons"></li></a>
-                        <a href="https://www.instagram.com/04.21.25/" target="_blank"><li><img src="Images/Instagram-Icon.png" alt="icons"></li></a>
-                        <a href="https://github.com/duy042125" target="_blank"><li><img src="Images/Github-Icon.png" alt="icons"></li></a>
-                        <a href="https://www.linkedin.com/in/042125/" target="_blank"><li><img src="Images/Linked-In-Icon.png" alt="icons"></li></a>
-                    </ul>
-                </div>
-            </div>
-			<div id="experience" class="tab-contener">
-                <ul class="display-zone-h">
-                    <li class="container" data-aos="fade-right">
-                        <h3 class="highlight">System Developer</h3>
-                        <h5>
-                            Creative Group - Superior, WI <br>
-                            (05/2019 to 08/2021)
-                        </h5>
-                        <ul>
-                            <li>Built the whole system from scratch by myself for a psychologist to manage his patient behavior changing.</li>
-                            <li>Coordinated system installations, testing and code corrections.</li> 
-                            <li>Recommended and executed plans to improve development tools and processes.</li> 
-                        </ul>
-                    </li>
-                    <li class="container" data-aos="fade-left">
-                        <h3 class="highlight">Middleware Developer</h3>
-                        <h5>
-                            Computer Sciences Capstone - Superior, WI <br>
-                            (08/2019 to 12/2019)
-                        </h5>
-                        <ul>
-                            <li>Provided the managing web system for University Admiration Office to send out bulk email for their clients and
-                                manage their information. This program is currently using reality.</li>
-                            <li>Implemented and tested enhancement feature requests to improve product functionality and extend performance.</li> 
-                            <li>Recommended and executed plans to improve development tools and processes.</li> 
-                            <li>Working with 12-person team, discussed project roadblocks to drive issue resolution and promoted use of best
-                                practices.</li>
-                        </ul>
-                    </li>
-                    <li class="container" data-aos="fade-right">
-                        <h3 class="highlight">Web Guru</h3>
-                        <h5>
-                            UWS Mathematics & Computer Science Club - Superior, WI <br>
-                            (04/2018 to 05/2019)
-                        </h5>
-                        <ul>
-                            <li>Edit and organize the club website.</li>
-                            <li>Attend to club meetings and conferences.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div id="skills" class="tab-contener">
-                <div class="display-zone-h">
-                    <h2 class="highlight" data-aos="zoom-in">Programming Skills</h2>
-                    <div class="info-box" data-aos="slide-down">
-                        <div class="name">
-                            <ul>
-                                <li>Advance:</li>
-                                <li>Intermediate:</li>
-                                <li>Beginner:</li>
-                            </ul>
-                        </div>
-                        <div class="detail">
-                            <ul>
-                                <li>C#, Java, C++</li>
-                                <li>SQL, JavaScript, CSS, HTML5.</li>
-                                <li>Unity, C, ARM Assambling Language.</li></ul>
-                            </div>
-                    </div>
-                    <h2 class="highlight" data-aos="zoom-in">Other Skills</h2>
-                    <div class="info-box" data-aos="slide-up">
-                        <div class="name">
-                            <ul>
-                                <li>Photography:</li>
-                                <li>Office:</li>
-                                <li>Model:</li>
-                            </ul>
-                        </div>
-                        <div class="detail">
-                            <ul>
-                                <li>DRLR, Adobe Lightroom</li>
-                                <li>Full Microsoft Office Suite</li>
-                                <li>Blender (Beginner)</li></ul>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="contact" class="tab-contener">
-                <div class="display-zone-h" data-aos="zoom-in">
-                    <h2 class="highlight">Peronsal Information</h2>
-                    <div class="info-box">
-                        <div class="name">
-                            <ul>
-                                <li>Location: </li>
-                                <li>Email:</li>
-                                <li>Phone Number:</li>
-                            </ul>
-                        </div>
-                        <div class="detail">
-                            <ul>
-                                <li>Superior, Wisconsin, USA</li>
-                                <li>duy.h.nguyen.work@gmail.com</li>
-                                <li>(218) 940-2504</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h2 class="highlight" >Social Media</h2>
-                    <div class="info-box">
-                        <div class="name">
-                            <ul>
-                                <li>Facebook:</li>
-                                <li>Instagram:</li>
-                                <li>Github:</li>
-                                <li>Link-In:</li>
-                            </ul>
-                        </div>
-                        <div class="detail">
-                            <ul>
-                                <li><a href="https://www.facebook.com/d04.21.25/" target="_blank">@d.04.21.25</a></li>
-                                <li><a href="https://www.instagram.com/04.21.25/" target="_blank">@04.21.25</a></li>
-                                <li><a href="https://github.com/duy042125" target="_blank">@duy042125</a></li>
-                                <li><a href="https://www.linkedin.com/in/042125/" target="_blank">@042125</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer id="main-footer">
-			<p>Copyright &copy; 2021, Duy Nguyen's website</p>
-        </footer>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- Header -->
+        <div id="header-container"></div>
         <script>
-            AOS.init({offset: 250});
-        </script> -->
+            $(function ()
+            {
+                $("#header-container").load("/HTML/Header.html");
+            });
+        </script>
+        <!-- End Header -->
+
+        <main>
+            <div class="label">WELLCOME TO BUSSINIES WITH US</div>
+
+            <section class="promote">
+                <div class="promote-container">
+                    <h1>Edit Box</h1>
+                    <p>
+                        The text can be changed here
+                    </p>
+                </div>
+
+                <div class="promote-container">
+                    <h1>Edit Box</h1>
+                    <p>
+                        The text can be changed here
+                    </p>
+                </div>
+
+                <div class="promote-container">
+                    <h1>Edit Box</h1>
+                    <p>
+                        The text can be changed here
+                    </p>
+                </div>
+            </section>
+
+            <section class="showcase-container">
+                <div class="label">Laptops & Phones new arrival</div>
+                <div class="divider"></div>
+                <div class="gif-container"><img src="/Files/ProductGif/LaptopGif1.gif" alt=""></div>
+                <div class="gif-container"><img src="/Files/ProductGif/LaptopGif2.gif" alt=""></div>
+                <div class="gif-container"><img src="/Files/ProductGif/LaptopGif3.gif" alt=""></div>
+            </section>
+            <section class="showcase-container">
+                <div class="label">Cosmetic price</div>
+                <div class="divider"></div>
+                <div class="gif-container"><img src="/Files/ProductGif/GroceryGif1.gif" alt=""></div>
+                <div class="gif-container"><img src="/Files/ProductGif/GroceryGif2.gif" alt=""></div>
+                <div class="gif-container"><img src="/Files/ProductGif/GroceryGif3.gif" alt=""></div>
+            </section>
+            <section class="showcase-container">
+                <div class="label">Perfume just arrived</div>
+                <div class="divider"></div>
+                <div class="gif-container"><img src="/Files/ProductGif/PerfumeGif1.gif" alt=""></div>
+                <div class="gif-container"><img src="/Files/ProductGif/PerfumeGif2.gif" alt=""></div>
+                <div class="gif-container"><img src="/Files/ProductGif/PerfumeGif3.gif" alt=""></div>
+            </section>
+        </main>
+
+        <footer id="about-us">
+            <ul class="contact-container" id="open-hour">
+                <div class="label">Contact Hours</div>
+                <li><span>Monday - Friday:</span>9am - 5pm</li>
+                <li><span>Saturday:</span> 10am - 5pm</li>
+                <li><span>Sunday:</span> Closed</li>
+            </ul>
+            <ul class="contact-container">
+                <div class="label">THN Trading</div>
+                <li>
+                    <img src="/Files/AddressIcon.png" alt="">
+                    10111 Wilcrest Drive Unit 206, <br>
+                    Houston, Texas, <br>
+                    77099, United States.
+                </li>
+                <li>
+                    <img src="/Files/PhoneIcon.png" alt="">
+                    Phone: (702)-829-3664 <br>
+                    Whatapp: (832)-302-1876
+                </li>
+                <li>
+                    <img src="/Files/EmailIcon.png" alt="">
+                    sales@thntrading.com
+                </li>
+                <li>
+                    <img src="/Files/FacebookIcon.png" alt="">
+                    <a href="https://www.facebook.com/thntrading02">THN-Trading Facebook</a>
+                </li>
+            </ul>
+            <div id="copy-right">
+                Copyright © 2018 THN TRADING - All Rights Reserved.
+            </div>
+        </footer>
     </body>
 
 </html>
