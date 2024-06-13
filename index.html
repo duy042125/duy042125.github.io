@@ -1,12 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duy Nguyen</title>
-</head>
-<body>
-    
-</body>
+<html lang="en-US">
+	<head>
+		<title>Duy Nguyen</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link rel="stylesheet" media="screen and (min-width: 1100px)" href="CSS/BigScreen.css">
+		<link rel="stylesheet" media="screen and (max-width: 1100px)" href="CSS/SmallScreen.css">
+		<meta name="description" content="Personal Webstie">
+		<meta name="keywords" content="Personal Website, Resume">
+		<meta name="author"	content="Duy Nguyen">
+	</head>
+	<body>
+        <nav id="main-header">
+			<div>
+                <a id="icon" href="index.html">
+                    <h1>Duy</h1>
+                    <h2>Nguyen</h2>
+                    <h1>.pw</h1>
+                </a>
+			</div>
+			<!-- For big screen-->
+			<div id="nav">
+				<ul>
+					<a href="#home" id="nav-home"><li>Home</li></a>
+					<a href="#experience" id="nav-experience"><li>Experience</li></a>
+					<a href="#skills" id="nav-skills"><li>Skills</li></a>
+					<a href="#project" id="nav-project"><li>Project</li></a>
+					<a href="#contact" id="nav-contact"><li>Contact</li></a>
+				</ul>
+			</div>
+			<!-- For small screen-->
+			<div id="nav-mobile">
+				<div class="menu">
+					<button class="menu-icon">
+						<img src="Images/Menu-Icon.png" alt="Menu Icon" sizes="50%">
+					</button>
+					<div class="menu-content">
+						<a href="#home">Home</a>
+						<a href="#experience">Experience</a>
+						<a href="#skills">Skills</a>
+						<a href="#project">Project</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="main-body">
+            <div id="home" class="tab-contener">
+                <div class="portrait">
+                    <picture>
+                        <source srcset="Images/BigPortrait.jpg" media="(min-width: 1250px)">
+                        <source srcset="Images/SmallPortrait.jpg">
+                        <img src="Images/BigPortrait.jpg" alt="My Potrait">
+                    </picture>
+                </div>
+                <div class="text-field">
+                    <h2 class="highlight">Hello, I'm</h2>
+                    <h1>Duy Nguyen</h1>
+                    <h4>Student Programer and Developer</h4>
+                    <p>I am double majoring in Mathematics and Computer Science at University of Wisconsin - Superior. I am young, enthusiastic and eager to improve myself.</p>
+                    <a href="Files/Resume.pdf" download="Resume.pdf">Hire me!</a>
+                </div>
+                <div class="aside">
+                    <ul>
+                        <a href="https://www.facebook.com/d04.21.25/" target="_blank"><li><img src="Images/Facebook-Icon.png" alt="icons"></li></a>
+                        <a href="https://www.instagram.com/04.21.25/" target="_blank"><li><img src="Images/Instagram-Icon.png" alt="icons"></li></a>
+                        <a href="https://github.com/duy042125" target="_blank"><li><img src="Images/Github-Icon.png" alt="icons"></li></a>
+                        <a href="https://www.linkedin.com/in/duynguyen042125/" target="_blank"><li><img src="Images/Linked-In-Icon.png" alt="icons"></li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="gallery" class="tab-contener">
+                <div data-aos="fade-right">
+                    <h3> I love to travel around places and <br> taking picture of the moments. <br> <br> You can check out <br> my photos here.</h3>
+                </div>
+                <div id="instag-photo" data-aos="fade-left">
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-e113583a-a921-4d82-87e3-e72c7d0f6aa5"></div>
+                </div>
+            </div>
+			<div id="experience" class="tab-contener">
+                <ul class="display-zone">
+                    <li class="container" data-aos="fade-right">
+                        <h3 class="highlight">System Developer</h3>
+                        <h5>
+                            Creative Group - Superior, WI <br>
+                            (05/2019 to 08/2021)
+                        </h5>
+                        <ul>
+                            <li>I built the whole system from scratch by myself for a psychologist to manage his patient behavior changing.</li>
+                            <li>Coordinated system installations, testing and code corrections.</li> 
+                            <li>Recommended and executed plans to improve development tools and processes.</li> 
+                        </ul>
+                    </li>
+                    <li class="container" data-aos="fade-left">
+                        <h3 class="highlight">Middleware Developer</h3>
+                        <h5>
+                            Computer Sciences Capstone - Superior, WI <br>
+                            (08/2019 to 12/2019)
+                        </h5>
+                        <ul>
+                            <li>Provide the managing web system for University Admiration Office to send out bulk email for their clients and
+                                manage their information. This program is currently using reality.</li>
+                            <li>Implemented and tested enhancement feature requests to improve product functionality and extend performance.</li> 
+                            <li>Recommended and executed plans to improve development tools and processes.</li> 
+                            <li>Working with 12-person team, discussed project roadblocks to drive issue resolution and promoted use of best
+                                practices.</li>
+                        </ul>
+                    </li>
+                    <li class="container" data-aos="fade-right">
+                        <h3 class="highlight">Web Guru</h3>
+                        <h5>
+                            UWS Mathematics & Computer Science Club - Superior, WI <br>
+                            (04/2018 to 05/2019)
+                        </h5>
+                        <ul>
+                            <li>Edit and organize the club website.</li>
+                            <li>Attend to club meetings and conferences.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="skills" class="tab-contener">
+                <div class="display-zone">
+                    <h2 class="highlight" data-aos="zoom-in">Programming Skills</h2>
+                    <div class="info-box" data-aos="slide-down">
+                        <div class="name">
+                            <ul>
+                                <li>Advance:</li>
+                                <li>Intermediate:</li>
+                                <li>Beginner:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>C#, Java, C++</li>
+                                <li>SQL, JavaScript, CSS, HTML5.</li>
+                                <li>Unity, C, ARM Assambling Language.</li></ul>
+                            </div>
+                    </div>
+                    <h2 class="highlight" data-aos="zoom-in">Other Skills</h2>
+                    <div class="info-box" data-aos="slide-up">
+                        <div class="name">
+                            <ul>
+                                <li>Photography:</li>
+                                <li>Office:</li>
+                                <li>Model:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>DRLR, Adobe Lightroom</li>
+                                <li>Full Microsoft Office Suite</li>
+                                <li>Blender (Beginner)</li></ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div id="project" class="tab-contener">
+                <ul class="display-zone">
+                    <li class="item">
+                        <a href="index.html">
+                            <img src="Images/duynguyen.pw.png" alt="Personal Website">
+                            <h4 class="highlight">Personal Website</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contact" class="tab-contener">
+                <div class="display-zone" data-aos="zoom-in">
+                    <h2 class="highlight">Peronsal Information</h2>
+                    <div class="info-box">
+                        <div class="name">
+                            <ul>
+                                <li>Location: </li>
+                                <li>Email:</li>
+                                <li>Phone Number:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li>Superior, Wisconsin, USA</li>
+                                <li>duy.h.nguyen.work@gmail.com</li>
+                                <li>(218) 940-2504</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="highlight" >Social Media</h2>
+                    <div class="info-box">
+                        <div class="name">
+                            <ul>
+                                <li>Facebook:</li>
+                                <li>Instagram:</li>
+                                <li>Github:</li>
+                                <li>Link-In:</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li><a href="https://www.facebook.com/d04.21.25/" target="_blank">@d.04.21.25</a></li>
+                                <li><a href="https://www.instagram.com/04.21.25/" target="_blank">@04.21.25</a></li>
+                                <li><a href="https://github.com/duy042125" target="_blank">@duy042125</a></li>
+                                <li><a href="https://www.linkedin.com/in/duynguyen042125/" target="_blank">@duynguyen042125</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="main-footer">
+			<p>Copyright &copy; 2021, Duy Nguyen's website</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({offset: 250});
+        </script>
+    </body>
 </html>
