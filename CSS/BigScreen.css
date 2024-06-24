@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5
 {
     margin: 0;
 }
-.tab-contener
+.tab-container
 {
     margin-top: 0.5vh;
     width: 100%;
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5
     overflow-x: hidden;
     scroll-snap-align: start;
 }
-.tab-contener::-webkit-scrollbar
+.tab-container::-webkit-scrollbar
 {
     width: 0;
 }
